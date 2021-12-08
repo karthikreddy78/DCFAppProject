@@ -1,5 +1,6 @@
 package com.dcfuser.user.entity;
 
+import com.fasterxml.jackson.annotation.JsonIgnore;
 import com.mongodb.lang.NonNull;
 import org.springframework.data.annotation.Id;
 import org.springframework.data.annotation.Transient;
@@ -23,9 +24,11 @@ public class User {
     private String gender;
     private String age;
     private String userName;
+    @JsonIgnore
     private String password;
+    private String role;
 
-    public User(int id, String firstName, String lastName, String email, String mobileNumber, String gender, String age, String userName, String password) {
+    public User(int id, String firstName, String lastName, String email, String mobileNumber, String gender, String age, String userName, String password, String role) {
         this.id = id;
         this.firstName = firstName;
         this.lastName = lastName;
@@ -35,6 +38,15 @@ public class User {
         this.age = age;
         this.userName = userName;
         this.password = password;
+        this.role=role;
+    }
+
+    public String getRole() {
+        return role;
+    }
+
+    public void setRole(String role) {
+        this.role = role;
     }
 
     public int getId() {

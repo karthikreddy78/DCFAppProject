@@ -1,7 +1,12 @@
 package com.musku.admin.controller;
 
 import com.musku.admin.entity.Admin;
+import com.musku.admin.entity.Company;
 import com.musku.admin.entity.User;
+import com.musku.admin.entity.Coupon;
+import com.musku.admin.proxy.CompanyFeignProxy;
+import com.musku.admin.proxy.CouponFeignProxy;
+import com.musku.admin.proxy.UserFeignProxy;
 import com.musku.admin.service.AdminService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
@@ -13,6 +18,15 @@ public class AdminController {
 
     @Autowired
     private AdminService adminService;
+
+    @Autowired
+    private UserFeignProxy userFeignProxy;
+
+    @Autowired
+    private CouponFeignProxy couponFeignProxy;
+
+    @Autowired
+    private CompanyFeignProxy companyFeignProxy;
 
 //    @GetMapping(path="/getadminlist")
 //    public List<Admin> showAdmin()
@@ -27,6 +41,53 @@ public class AdminController {
     }
 
 
+    @GetMapping(path="/users/userlist")
+    public List<User> getlist()
+    {
+        List<User> users = userFeignProxy.showUsers();
+        return users;
+    }
+
+//Coupon Communication Microservice
+    @GetMapping(path="/coupons/couponslist")
+    public List<Coupon> getcouponlist()
+    {
+        List<Coupon> coupons = (List<Coupon>) couponFeignProxy.showCoupons();
+        return coupons;
+    }
+
+    @GetMapping(path="/coupons/company/{id}")
+    public List<Coupon> showCouponsByCompany(@PathVariable String id)
+    {
+        List<Coupon> coupons = couponFeignProxy.showCouponsByCompany(id);
+        System.out.print(coupons);
+        return coupons;
+    }
+
+
+
+    //Company Microservice Communication
+
+    @GetMapping(path="/company/companylist")
+    public List<Company> getcompanylist()
+    {
+        List<Company> company = companyFeignProxy.getlist();
+        return company;
+    }
+
+    @DeleteMapping(path="/company/deletebyname/{id}")
+    public Company deleteByUsername(@PathVariable String id)
+    {
+        return companyFeignProxy.deleteByUsername(id);
+    }
+
+
+
+
+
+
+
+    //Admin CRUD
     @GetMapping(path="/getlist")
     public List<Admin> showUsers()
     {

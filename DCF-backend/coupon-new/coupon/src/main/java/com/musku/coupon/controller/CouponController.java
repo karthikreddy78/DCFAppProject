@@ -39,6 +39,23 @@ public class CouponController {
         return u;
     }
 
+
+    @GetMapping(path="/company/{id}")
+    public List<Coupon> showCouponsByCompany(@PathVariable String id)
+    {
+        List<Coupon> u= couponService.findCouponsByCompany(id);
+        if(u==null)
+        {
+            throw new CouponNotFoundException("id="+id);
+        }
+        System.out.print(u);
+        return u;
+    }
+
+
+
+
+
     @GetMapping(path="/couponname/{id}")
     public Coupon showCouponByCouponname(@PathVariable String id)
     {

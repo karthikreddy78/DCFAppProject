@@ -3,7 +3,7 @@ package com.musku.admin.entity;
 import org.springframework.data.annotation.Id;
 import org.springframework.data.mongodb.core.mapping.Document;
 
-@Document(collection = "database_sequences")
+@Document(collection = "database_adminsequences")
 public class DatabaseSequence {
 
     @Id

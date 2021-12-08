@@ -15,7 +15,7 @@ public class Coupon {
     //Attributes
     @Id
     private int id;
-    private String companyID;
+    private String company;
     private Category category;
     private String couponname;
     private String description;
@@ -27,11 +27,11 @@ public class Coupon {
 
 
 
-    public Coupon(int id, String companyID, Category category, String title, String description, Date startDate,
+    public Coupon(int id, String company, Category category, String title, String description, Date startDate,
                   Date endDate, int offer, String code) {
         super();
         this.id = id;
-        this.companyID = companyID;
+        this.company = company;
         this.category = category;
         this.couponname = title;
         this.description = description;
@@ -56,12 +56,12 @@ public class Coupon {
         this.id = id;
     }
 
-    public String getCompanyID() {
-        return companyID;
+    public String getCompany() {
+        return company;
     }
 
-    public void setCompanyID(String companyID) {
-        this.companyID = companyID;
+    public void setCompany(String company) {
+        this.company = company;
     }
 
     public Category getCategory() {
@@ -123,7 +123,7 @@ public class Coupon {
     //Print Coupon details
     @Override
     public String toString() {
-        return "Coupon [id=" + id + ", companyID=" + companyID + ", category=" + category + ", title=" + couponname
+        return "Coupon [id=" + id + ", company=" + company + ", category=" + category + ", title=" + couponname
                 + ", description=" + description + ", startDate=" + startDate + ", endDate=" + endDate + ", offer="
                 + offer + ", code=" + code + "]";
     }

@@ -3,7 +3,7 @@ package com.musku.coupon.entity;
 import org.springframework.data.annotation.Id;
 import org.springframework.data.mongodb.core.mapping.Document;
 
-@Document(collection = "database_sequences")
+@Document(collection = "database_couponsequences")
 public class DatabaseSequence {
 
     @Id

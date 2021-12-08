@@ -8,7 +8,7 @@ import org.springframework.stereotype.Service;
 
 import java.util.List;
 
-import static com.musku.admin.entity.User.SEQUENCE_NAME;
+import static com.musku.admin.entity.Admin.SEQUENCE_NAME;
 
 @Service
 public class AdminService {
@@ -46,14 +46,8 @@ public class AdminService {
         {
             return null;
         }
-        if(u.getFirstName()!=null)
-            u1.setFirstName(u.getFirstName());
-        if(u.getLastName()!=null)
-            u1.setLastName(u.getLastName());
-        if(u.getAge()!=(null))
-            u1.setAge(u.getAge());
-        if(u.getGender()!=(null))
-            u1.setGender(u.getGender());
+        if(u.getName()!=null)
+            u1.setName(u.getName());
         if(u.getPassword()!=(null))
             u1.setPassword(u.getPassword());
         if(u.getRole()!=null)
@@ -69,14 +63,8 @@ public class AdminService {
         {
             return null;
         }
-        if(u.getFirstName()!=null)
-            u1.setFirstName(u.getFirstName());
-        if(u.getLastName()!=null)
-            u1.setLastName(u.getLastName());
-        if(u.getAge()!=(null))
-            u1.setAge(u.getAge());
-        if(u.getGender()!=(null))
-            u1.setGender(u.getGender());
+        if(u.getName()!=null)
+            u1.setName(u.getName());
         if(u.getPassword()!=(null))
             u1.setPassword(u.getPassword());
         if(u.getRole()!=null)

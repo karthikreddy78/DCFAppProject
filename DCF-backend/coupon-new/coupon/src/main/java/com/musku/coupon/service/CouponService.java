@@ -8,7 +8,7 @@ import org.springframework.stereotype.Service;
 
 import java.util.List;
 
-import static com.musku.coupon.entity.User.SEQUENCE_NAME;
+import static com.musku.coupon.entity.Coupon.SEQUENCE_NAME;
 @Service
 public class CouponService {
 
@@ -21,7 +21,8 @@ public class CouponService {
 
     //Create operation
     public Coupon create(Coupon u) {
-        //u.setId(service.getSequenceNumber(SEQUENCE_NAME));
+        u.setId(service.getSequenceNumber(SEQUENCE_NAME));
+        System.out.println(u);
         return couponRepository.save(u);
     }
     //Retrieve operation
@@ -37,6 +38,11 @@ public class CouponService {
     }
 
 
+    public List<Coupon> findCouponsByCompany(String company)
+    {
+        return couponRepository.findCouponsByCompany(company);
+    }
+
     //Update operation
     public Coupon updateById(Coupon u,int id) {
         Coupon u1=couponRepository.findCouponsById(id);
@@ -44,7 +50,8 @@ public class CouponService {
         {
             return null;
         }
-
+        if(u.getCompany()!=null)
+            u1.setCompany(u.getCompany());
         if(u.getDescription()!=null)
             u1.setDescription(u.getDescription());
         if(u.getEndDate()!=null)
@@ -62,7 +69,8 @@ public class CouponService {
         {
             return null;
         }
-
+        if(u.getCompany()!=null)
+            u1.setCompany(u.getCompany());
         if(u.getDescription()!=null)
             u1.setDescription(u.getDescription());
         if(u.getEndDate()!=null)
