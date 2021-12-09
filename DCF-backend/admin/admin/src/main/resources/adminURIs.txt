@@ -1,0 +1,16 @@
+Admin-URLS
+
+http://localhost:3500/admin/company/{id}
+http://localhost:3500/admin/users/userlist
+http://localhost:3500/admin/users/deletebyname/{id}
+http://localhost:3500/admin/coupons/couponslist
+http://localhost:3500/admin/coupons/company/{id}
+http://localhost:3500/admin/company/companylist
+http://localhost:3500/admin/company/deletebyname/{id}
+http://localhost:3500/admin/getlist
+http://localhost:3500/admin/getadminlist
+http://localhost:3500/admin/addadmin
+http://localhost:3500/admin/updateadminbyid/{id}
+http://localhost:3500/admin/updateadminbyusername/{id}
+http://localhost:3500/admin/deletebyid/{id}
+http://localhost:3500/admin//deletebyname/{id}

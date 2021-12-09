@@ -60,6 +60,8 @@ public class CouponService {
             u1.setCode(u.getCode());
         if(u.getTitle()!=(null))
             u1.setTitle(u.getTitle());
+        if(u.getOffer()!=0)
+            u1.setOffer(u.getOffer());
         return couponRepository.save(u1);
     }
 
@@ -79,7 +81,8 @@ public class CouponService {
             u1.setCode(u.getCode());
         if(u.getTitle()!=(null))
             u1.setTitle(u.getTitle());
-
+        if(u.getOffer()!=0)
+            u1.setOffer(u.getOffer());
         return couponRepository.save(u1);
     }
     //Delete operation

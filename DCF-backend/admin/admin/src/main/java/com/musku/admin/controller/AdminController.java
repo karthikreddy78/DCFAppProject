@@ -48,6 +48,12 @@ public class AdminController {
         return users;
     }
 
+    @DeleteMapping(path="/users/deletebyname/{id}")
+    public User deleteUsersByUsername(@PathVariable String id)
+    {
+        return userFeignProxy.deleteUserByUsername(id);
+    }
+
 //Coupon Communication Microservice
     @GetMapping(path="/coupons/couponslist")
     public List<Coupon> getcouponlist()
