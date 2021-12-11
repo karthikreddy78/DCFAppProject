@@ -1,6 +1,7 @@
 package com.musku.coupon.entity;
 
 import com.fasterxml.jackson.annotation.JsonIgnore;
+import com.fasterxml.jackson.annotation.JsonProperty;
 import org.springframework.data.annotation.Id;
 import org.springframework.data.annotation.Transient;
 import org.springframework.data.mongodb.core.mapping.Document;
@@ -15,7 +16,7 @@ public class User {
     private String gender;
     private String age;
     private String userName;
-    @JsonIgnore
+    @JsonProperty(access = JsonProperty.Access.WRITE_ONLY)
     private String password;
 
     public User(int id, String firstName, String lastName, String email, String mobileNumber, String gender, String age, String userName, String password) {

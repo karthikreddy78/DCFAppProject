@@ -1,6 +1,7 @@
 package com.musku.admin.entity;
 
 import com.fasterxml.jackson.annotation.JsonIgnore;
+import com.fasterxml.jackson.annotation.JsonProperty;
 import org.springframework.data.annotation.Id;
 import org.springframework.data.annotation.Transient;
 import org.springframework.data.mongodb.core.mapping.Document;
@@ -15,7 +16,7 @@ public class Admin {
        private String name;
         private String email;
         private String userName;
-        @JsonIgnore
+        @JsonProperty(access = JsonProperty.Access.WRITE_ONLY)
         private String password;
         private String role;
 

@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/.idea/DCF-backend.iml" filepath="$PROJECT_DIR$/.idea/DCF-backend.iml" />
+      <module fileurl="file://$PROJECT_DIR$/admin/admin/admin.iml" filepath="$PROJECT_DIR$/admin/admin/admin.iml" />
+      <module fileurl="file://$PROJECT_DIR$/company/company/company.iml" filepath="$PROJECT_DIR$/company/company/company.iml" />
+      <module fileurl="file://$PROJECT_DIR$/coupon-new/coupon/coupon.iml" filepath="$PROJECT_DIR$/coupon-new/coupon/coupon.iml" />
+      <module fileurl="file://$PROJECT_DIR$/naming-server/naming-server/naming-server.iml" filepath="$PROJECT_DIR$/naming-server/naming-server/naming-server.iml" />
+      <module fileurl="file://$PROJECT_DIR$/user/user.iml" filepath="$PROJECT_DIR$/user/user.iml" />
+    </modules>
+  </component>
+</project>

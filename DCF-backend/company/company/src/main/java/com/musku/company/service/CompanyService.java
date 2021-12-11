@@ -21,7 +21,10 @@ public class CompanyService {
 
     public Company create(Company u) {
         u.setId(service.getSequenceNumber(SEQUENCE_NAME));
-        return companyRepository.save(u);
+        System.out.println(u.getPassword());
+        Company save = companyRepository.save(u);
+        System.out.println(companyRepository.findCompanyByUserName(u.getUserName()));
+        return save;
     }
 
     public Company updateById(Company u,int id) {

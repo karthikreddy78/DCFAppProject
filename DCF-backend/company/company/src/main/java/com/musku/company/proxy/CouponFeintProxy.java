@@ -6,7 +6,7 @@ import org.springframework.web.bind.annotation.*;
 
 import java.util.List;
 
-@FeignClient(name = "coupon-service")
+@FeignClient(name = "coupons")
 public interface CouponFeintProxy {
 
     @GetMapping(path="/coupons/company/{id}")

@@ -84,7 +84,14 @@ public class AdminController {
     @DeleteMapping(path="/company/deletebyname/{id}")
     public Company deleteByUsername(@PathVariable String id)
     {
+
         return companyFeignProxy.deleteByUsername(id);
+    }
+
+    @PostMapping(path = "/company/addcompany")
+    public Company postCompany(@RequestBody Company u)
+    {
+        return companyFeignProxy.postCompany(u);
     }
 
 

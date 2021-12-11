@@ -8,7 +8,7 @@ import org.springframework.web.bind.annotation.PathVariable;
 
 import java.util.List;
 
-@FeignClient(name = "user-service")
+@FeignClient(name = "users")
 public interface UserFeignProxy {
 
     @GetMapping(path="/users/getuserlist")
