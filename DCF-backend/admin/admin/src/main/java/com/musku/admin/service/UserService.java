@@ -1,12 +1,12 @@
-package com.dcfuser.user.service;
+package com.musku.admin.service;
 
-import com.dcfuser.user.entity.User;
-import com.dcfuser.user.repository.RoleRepository;
-import com.dcfuser.user.repository.UserRepository;
-
+import com.musku.admin.entity.User;
+import com.musku.admin.repository.RoleRepository;
+import com.musku.admin.repository.UserRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
+import java.util.List;
 import java.util.Optional;
 
 @Service
@@ -57,8 +57,7 @@ public class UserService {
     }
 
 
-
-
-
-
+    public List<User> getAll() {
+        return userRepository.findAll();
+    }
 }

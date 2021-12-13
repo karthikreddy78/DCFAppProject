@@ -1,4 +1,4 @@
-package com.musku.admin.entity;
+package com.dcfuser.user.entity;
 
 import java.util.Date;
 

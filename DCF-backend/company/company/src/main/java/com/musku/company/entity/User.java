@@ -1,4 +1,4 @@
-package com.musku.admin.entity;
+package com.musku.company.entity;
 
 import org.springframework.data.annotation.Id;
 import org.springframework.data.mongodb.core.index.IndexDirection;

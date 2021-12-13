@@ -1,9 +1,8 @@
-package com.dcfuser.user.service;
+package com.musku.company.service;
 
-import com.dcfuser.user.entity.User;
-import com.dcfuser.user.repository.RoleRepository;
-import com.dcfuser.user.repository.UserRepository;
-
+import com.musku.company.entity.User;
+import com.musku.company.repository.RoleRepository;
+import com.musku.company.repository.UserRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
