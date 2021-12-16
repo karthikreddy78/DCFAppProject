@@ -1,11 +1,21 @@
 package com.musku.company.entity;
 
+import org.springframework.data.annotation.Id;
+import org.springframework.data.annotation.Transient;
+import org.springframework.data.mongodb.core.index.IndexDirection;
+import org.springframework.data.mongodb.core.index.Indexed;
+import org.springframework.data.mongodb.core.mapping.Document;
+
 import java.util.Date;
 
 
 public class Coupon {
 
-    private int id;
+
+    //    @Transient
+//    public static final String SEQUENCE_NAME = "user_sequence";
+    //Attributes
+    private String code;
     private String company;
     private Category category;
     private String couponname;
@@ -13,18 +23,18 @@ public class Coupon {
     private Date startDate;
     private Date endDate;
     private int offer;
-    private String code;
+    //private String code;
 
 
 
 
-    public Coupon(int id, String company, Category category, String title, String description, Date startDate,
-                  Date endDate, int offer, String code) {
+    public Coupon( String code,String company, Category category, String couponname, String description, Date startDate,
+                   Date endDate, int offer) {
         super();
-        this.id = id;
+        //this.id = id;
         this.company = company;
         this.category = category;
-        this.couponname = title;
+        this.couponname = couponname;
         this.description = description;
         this.startDate = startDate;
         this.endDate = endDate;
@@ -38,16 +48,23 @@ public class Coupon {
     public Coupon() {
     }
 
-
-
-
-    public int getId() {
-        return id;
+    public Coupon(String code) {
+        this.code=code;
     }
 
-    public void setId(int id) {
-        this.id = id;
+    public Coupon(String code, String company,String couponname) {
+        this.code=code;
+        this.company = company;
+        this.couponname=couponname;
     }
+
+//    public int getId() {
+//        return id;
+//    }
+//
+//    public void setId(int id) {
+//        this.id = id;
+//    }
 
     public String getCompany() {
         return company;
@@ -63,14 +80,6 @@ public class Coupon {
 
     public void setCategory(Category category) {
         this.category = category;
-    }
-
-    public String getTitle() {
-        return couponname;
-    }
-
-    public void setTitle(String title) {
-        this.couponname = title;
     }
 
     public String getDescription() {
@@ -114,13 +123,27 @@ public class Coupon {
     }
 
     //Print Coupon details
+
+
     @Override
     public String toString() {
-        return "Coupon [id=" + id + ", company=" + company + ", category=" + category + ", title=" + couponname
-                + ", description=" + description + ", startDate=" + startDate + ", endDate=" + endDate + ", offer="
-                + offer + ", code=" + code + "]";
+        return "Coupon{" +
+                "code='" + code + '\'' +
+                ", company='" + company + '\'' +
+                ", category=" + category +
+                ", couponname='" + couponname + '\'' +
+                ", description='" + description + '\'' +
+                ", startDate=" + startDate +
+                ", endDate=" + endDate +
+                ", offer=" + offer +
+                '}';
     }
 
+    public String getCouponname() {
+        return couponname;
+    }
 
-
+    public void setCouponname(String couponname) {
+        this.couponname = couponname;
+    }
 }

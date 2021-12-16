@@ -8,9 +8,9 @@ import org.springframework.stereotype.Repository;
 import java.util.List;
 
 @Repository
-public interface CouponRepository extends MongoRepository<Coupon,Integer> {
+public interface CouponRepository extends MongoRepository<Coupon,String> {
 
-    Coupon findCouponsById(int Id);
+    Coupon findCouponsByCode(String code);
     Coupon findCouponsByCouponname(String couponname);
     List<Coupon> findCouponsByCompany(String company);
 

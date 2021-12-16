@@ -18,6 +18,7 @@ public class CouponController {
     @GetMapping(path="/getcouponlist")
     public List<Coupon> showCoupons()
     {
+        System.out.println(couponService.getAll());
         return couponService.getAll();
     }
 
@@ -29,9 +30,9 @@ public class CouponController {
     }
 
     @GetMapping(path="/couponid/{id}")
-    public Coupon showCouponById(@PathVariable int id)
+    public Coupon showCouponById(@PathVariable String id)
     {
-        Coupon u=couponService.findCouponsById(id);
+        Coupon u=couponService.findCouponsByCode(id);
         if(u==null)
         {
             throw new CouponNotFoundException("id="+id);
@@ -69,7 +70,7 @@ public class CouponController {
     }
 
     @PutMapping(path = "/updatecouponbyid/{id}")
-    public Coupon updateCouponByID(@RequestBody Coupon u,@PathVariable int id)
+    public Coupon updateCouponByID(@RequestBody Coupon u,@PathVariable String id)
     {
         Coupon u1=couponService.updateById(u,id);
         if(u1==null)
@@ -98,7 +99,7 @@ public class CouponController {
     }
 
     @DeleteMapping(path = "/deletebyid/{id}")
-    public Coupon deleteCouponByID(@PathVariable int id)
+    public Coupon deleteCouponByID(@PathVariable String id)
     {
         Coupon u=couponService.deleteCouponById(id);
         if(u==null)

@@ -61,6 +61,15 @@ public class User {
 		super();
 	
 	}
+    public User(String id)
+    {
+        this.id=id;
+    }
+    public User(String id,String email)
+    {
+        this.id=id;
+        this.email=email;
+    }
 	@Override
 	public String toString() {
 		return "User [id=" + id + ", email=" + email + ", password=" + password + ", fullname=" + fullname

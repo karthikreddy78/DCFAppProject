@@ -8,7 +8,7 @@ import org.springframework.stereotype.Service;
 
 import java.util.List;
 
-import static com.musku.coupon.entity.Coupon.SEQUENCE_NAME;
+//import static com.musku.coupon.entity.Coupon.SEQUENCE_NAME;
 @Service
 public class CouponService {
 
@@ -16,21 +16,26 @@ public class CouponService {
     @Autowired
     private CouponRepository couponRepository;
 
-    @Autowired
-    private SequenceGeneratorService service;
+
 
     //Create operation
     public Coupon create(Coupon u) {
-        u.setId(service.getSequenceNumber(SEQUENCE_NAME));
+       // u.setId(service.getSequenceNumber(SEQUENCE_NAME));
         System.out.println(u);
-        return couponRepository.save(u);
+        Coupon p=couponRepository.findCouponsByCode(u.getCode());
+        if(p==null)
+        {
+            return couponRepository.save(u);
+        }
+        return p;
+
     }
     //Retrieve operation
     public List<Coupon> getAll(){
         return couponRepository.findAll();
     }
-    public Coupon findCouponsById(int id) {
-        return couponRepository.findCouponsById(id);
+    public Coupon findCouponsByCode(String code) {
+        return couponRepository.findCouponsByCode(code);
     }
 
     public Coupon findByCouponname(String username) {
@@ -44,8 +49,8 @@ public class CouponService {
     }
 
     //Update operation
-    public Coupon updateById(Coupon u,int id) {
-        Coupon u1=couponRepository.findCouponsById(id);
+    public Coupon updateById(Coupon u,String id) {
+        Coupon u1=couponRepository.findCouponsByCode(id);
         if(u1==null)
         {
             return null;
@@ -58,8 +63,8 @@ public class CouponService {
             u1.setEndDate(u.getEndDate());
         if(u.getCode()!=(null))
             u1.setCode(u.getCode());
-        if(u.getTitle()!=(null))
-            u1.setTitle(u.getTitle());
+        if(u.getCouponname()!=(null))
+            u1.setCouponname(u.getCouponname());
         if(u.getOffer()!=0)
             u1.setOffer(u.getOffer());
         return couponRepository.save(u1);
@@ -79,8 +84,8 @@ public class CouponService {
             u1.setEndDate(u.getEndDate());
         if(u.getCode()!=(null))
             u1.setCode(u.getCode());
-        if(u.getTitle()!=(null))
-            u1.setTitle(u.getTitle());
+        if(u.getCouponname()!=(null))
+            u1.setCouponname(u.getCouponname());
         if(u.getOffer()!=0)
             u1.setOffer(u.getOffer());
         return couponRepository.save(u1);
@@ -89,11 +94,11 @@ public class CouponService {
     public void deleteAll() {
         couponRepository.deleteAll();
     }
-    public Coupon deleteCouponById(int id) {
-        Coupon p = couponRepository.findCouponsById(id);
+    public Coupon deleteCouponById(String id) {
+        Coupon p = couponRepository.findCouponsByCode(id);
         if(p==null)
             return null;
-        couponRepository.delete(p);
+        couponRepository.deleteById(id);
         return p;
     }
 
@@ -101,7 +106,7 @@ public class CouponService {
         Coupon p=couponRepository.findCouponsByCouponname(id);
         if(p==null)
             return null;
-        couponRepository.delete(p);
+        couponRepository.deleteById(p.getCode());
         return p;
     }
 }

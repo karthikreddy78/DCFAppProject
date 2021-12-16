@@ -21,6 +21,8 @@ public class Controller {
     @Autowired
     private UserService userService;
 
+
+
     @Autowired
     private CouponFeignProxy couponFeintProxy;
 
@@ -30,6 +32,18 @@ public class Controller {
     public List<User> getDetails()
     {
         return userService.getAll();
+    }
+
+//    @GetMapping(path="/adminlist")
+//    public List<User>getAdmins()
+//    {
+//
+//    }
+
+    @GetMapping(path="/list/{role}")
+    public List<User> getList(@PathVariable String role)
+    {
+        return userService.findList(role);
     }
 
     @GetMapping(path="/username/{id}")
@@ -44,7 +58,7 @@ public class Controller {
     }
 
     @GetMapping(path="/email/{id}")
-    public User showUserByUsername(@PathVariable String id)
+    public User showUserByEmail(@PathVariable String id)
     {
         User u=userService.findUserByEmail(id);
         if(u==null)

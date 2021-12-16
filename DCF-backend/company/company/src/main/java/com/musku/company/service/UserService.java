@@ -43,7 +43,7 @@ public class UserService {
         User p=p1.get();
         if(p==null)
             return null;
-        userRepository.delete(p);
+        userRepository.deleteById(p.getId());
         return p;
     }
 
@@ -51,7 +51,7 @@ public class UserService {
        User p=userRepository.findByEmail(id);
         if(p==null)
             return null;
-        userRepository.delete(p);
+        userRepository.deleteById(p.getId());
         return p;
     }
 

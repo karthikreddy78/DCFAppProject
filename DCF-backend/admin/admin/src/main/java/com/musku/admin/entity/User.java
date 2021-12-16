@@ -66,6 +66,16 @@ public class User {
 		return "User [id=" + id + ", email=" + email + ", password=" + password + ", fullname=" + fullname
 				+ ", enabled=" + enabled + ", roles=" + roles + "]";
 	}
+
+    public User(String id)
+    {
+        this.id=id;
+    }
+    public User(String id,String email)
+    {
+        this.id=id;
+        this.email=email;
+    }
 	
 
 }

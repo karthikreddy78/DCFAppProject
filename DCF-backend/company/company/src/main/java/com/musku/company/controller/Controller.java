@@ -14,7 +14,7 @@ import java.util.ArrayList;
 import java.util.List;
 
 @RestController
-@RequestMapping("/companies")
+@RequestMapping("/company")
 public class Controller {
 
     @Autowired
@@ -37,7 +37,7 @@ public class Controller {
     }
 
     @GetMapping(path="/email/{id}")
-    public User showUserByUsername(@PathVariable String id)
+    public User showUserByEmail(@PathVariable String id)
     {
         User u=userService.findUserByEmail(id);
         if(u==null)

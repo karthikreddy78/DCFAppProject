@@ -1,13 +1,16 @@
 package com.musku.admin.service;
 
+import com.musku.admin.entity.Role;
 import com.musku.admin.entity.User;
 import com.musku.admin.repository.RoleRepository;
 import com.musku.admin.repository.UserRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
+import java.util.HashSet;
 import java.util.List;
 import java.util.Optional;
+import java.util.Set;
 
 @Service
 public class UserService {
@@ -59,5 +62,14 @@ public class UserService {
 
     public List<User> getAll() {
         return userRepository.findAll();
+    }
+
+    public List<User> findList(String role) {
+
+        Role r=roleRepository.findByRole(role);
+        System.out.println(r);
+        Set<Role> roles= new HashSet<>();
+        roles.add(r);
+        return userRepository.findByRolesIn(roles);
     }
 }
