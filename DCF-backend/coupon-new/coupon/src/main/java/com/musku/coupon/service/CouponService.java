@@ -8,103 +8,109 @@ import org.springframework.stereotype.Service;
 
 import java.util.List;
 
-//import static com.musku.coupon.entity.Coupon.SEQUENCE_NAME;
 @Service
 public class CouponService {
 
-    //private static final String SEQUENCE_NAME = ;
     @Autowired
     private CouponRepository couponRepository;
 
 
-
     //Create operation
-    public Coupon create(Coupon u) {
-       // u.setId(service.getSequenceNumber(SEQUENCE_NAME));
+    public Coupon create(Coupon u)
+    {
+        // u.setId(service.getSequenceNumber(SEQUENCE_NAME));
         System.out.println(u);
-        Coupon p=couponRepository.findCouponsByCode(u.getCode());
-        if(p==null)
-        {
+        Coupon p = couponRepository.findCouponsByCode(u.getCode());
+        if (p == null) {
             return couponRepository.save(u);
         }
         return p;
 
     }
+
     //Retrieve operation
-    public List<Coupon> getAll(){
+    public List<Coupon> getAll()
+    {
         return couponRepository.findAll();
     }
-    public Coupon findCouponsByCode(String code) {
+
+    //Find Coupon BY code
+    public Coupon findCouponsByCode(String code)
+    {
         return couponRepository.findCouponsByCode(code);
     }
-
-    public Coupon findByCouponname(String username) {
+    //find By Couponname
+    public Coupon findByCouponname(String username)
+    {
         return couponRepository.findCouponsByCouponname(username);
     }
 
-
+    //Coupon By company
     public List<Coupon> findCouponsByCompany(String company)
     {
         return couponRepository.findCouponsByCompany(company);
     }
 
     //Update operation
-    public Coupon updateById(Coupon u,String id) {
-        Coupon u1=couponRepository.findCouponsByCode(id);
-        if(u1==null)
-        {
+    public Coupon updateById(Coupon u, String id) {
+        Coupon u1 = couponRepository.findCouponsByCode(id);
+        if (u1 == null) {
             return null;
         }
-        if(u.getCompany()!=null)
+        if (u.getCompany() != null)
             u1.setCompany(u.getCompany());
-        if(u.getDescription()!=null)
+        if (u.getDescription() != null)
             u1.setDescription(u.getDescription());
-        if(u.getEndDate()!=null)
+        if (u.getEndDate() != null)
             u1.setEndDate(u.getEndDate());
-        if(u.getCode()!=(null))
+        if (u.getCode() != (null))
             u1.setCode(u.getCode());
-        if(u.getCouponname()!=(null))
+        if (u.getCouponname() != (null))
             u1.setCouponname(u.getCouponname());
-        if(u.getOffer()!=0)
+        if (u.getOffer() != 0)
             u1.setOffer(u.getOffer());
         return couponRepository.save(u1);
     }
 
-    public Coupon updateByCouponname(Coupon u,String id) {
-       Coupon u1=couponRepository.findCouponsByCouponname(id);
-        if(u1==null)
-        {
+    //Update By Coupon Name
+    public Coupon updateByCouponname(Coupon u, String id)
+    {
+        Coupon u1 = couponRepository.findCouponsByCouponname(id);
+        if (u1 == null) {
             return null;
         }
-        if(u.getCompany()!=null)
+        if (u.getCompany() != null)
             u1.setCompany(u.getCompany());
-        if(u.getDescription()!=null)
+        if (u.getDescription() != null)
             u1.setDescription(u.getDescription());
-        if(u.getEndDate()!=null)
+        if (u.getEndDate() != null)
             u1.setEndDate(u.getEndDate());
-        if(u.getCode()!=(null))
+        if (u.getCode() != (null))
             u1.setCode(u.getCode());
-        if(u.getCouponname()!=(null))
+        if (u.getCouponname() != (null))
             u1.setCouponname(u.getCouponname());
-        if(u.getOffer()!=0)
+        if (u.getOffer() != 0)
             u1.setOffer(u.getOffer());
         return couponRepository.save(u1);
     }
+
     //Delete operation
     public void deleteAll() {
         couponRepository.deleteAll();
     }
+
     public Coupon deleteCouponById(String id) {
         Coupon p = couponRepository.findCouponsByCode(id);
-        if(p==null)
+        if (p == null)
             return null;
         couponRepository.deleteById(id);
         return p;
     }
 
+    //Delete By Coupon Name
     public Coupon deleteCouponByCouponname(String id) {
-        Coupon p=couponRepository.findCouponsByCouponname(id);
-        if(p==null)
+        Coupon p = couponRepository.findCouponsByCouponname(id);
+        if (p == null)
             return null;
         couponRepository.deleteById(p.getCode());
         return p;

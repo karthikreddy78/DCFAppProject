@@ -11,6 +11,7 @@ import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.cloud.netflix.eureka.EnableEurekaClient;
 import org.springframework.cloud.openfeign.EnableFeignClients;
 import org.springframework.context.annotation.Bean;
+import org.springframework.web.bind.annotation.CrossOrigin;
 
 @SpringBootApplication
 @EnableEurekaClient
@@ -20,15 +21,16 @@ import org.springframework.context.annotation.Bean;
 )
 public class CouponApplication {
 
-	public static void main(String[] args) {
-		SpringApplication.run(CouponApplication.class, args);
-	}
+    public static void main(String[] args) {
+        SpringApplication.run(CouponApplication.class, args);
+    }
 
-	@Bean
-	public OpenAPI customOpenAPI(@Value("1.5.2") String appVersion) {
-		return new OpenAPI()
-				.components(new Components())
-				.info(new io.swagger.v3.oas.models.info.Info().title("Coupon API").version(appVersion)
-						.license(new License().name("Apache 2.0").url("http://springdoc.org")));
-	}
+	//establishing connection between UI and Swagger
+    @Bean
+    public OpenAPI customOpenAPI(@Value("1.5.2") String appVersion) {
+        return new OpenAPI()
+                .components(new Components())
+                .info(new io.swagger.v3.oas.models.info.Info().title("Coupon API").version(appVersion)
+                        .license(new License().name("Apache 2.0").url("http://springdoc.org")));
+    }
 }

@@ -5,271 +5,76 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="157b020e-0aed-46ad-9b30-2382a8ea2024" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/../coupon-new/.idea/libraries/Maven__org_apiguardian_apiguardian_api_1_0_0.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../coupon-new/.idea/libraries/Maven__org_junit_jupiter_junit_jupiter_api_5_4_0.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../coupon-new/.idea/libraries/Maven__org_junit_jupiter_junit_jupiter_engine_5_4_0.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../coupon-new/.idea/libraries/Maven__org_opentest4j_opentest4j_1_1_1.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../coupon-new/coupon/src/main/java/com/musku/coupon/service/CollectionsConfig.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../coupon-new/coupon/src/test/java/com/musku/coupon/controller/CouponControllerTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../coupon-new/coupon/src/test/java/com/musku/coupon/controller/CouponControllerTest1.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../user/.idea/libraries/Maven__antlr_antlr_2_7_7.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../user/.idea/libraries/Maven__ch_qos_logback_logback_classic_1_2_7.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../user/.idea/libraries/Maven__ch_qos_logback_logback_core_1_2_7.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../user/.idea/libraries/Maven__com_fasterxml_jackson_core_jackson_annotations_2_13_0.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../user/.idea/libraries/Maven__com_fasterxml_jackson_core_jackson_core_2_13_0.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../user/.idea/libraries/Maven__com_fasterxml_jackson_core_jackson_databind_2_13_0.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../user/.idea/libraries/Maven__com_fasterxml_jackson_dataformat_jackson_dataformat_yaml_2_13_0.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../user/.idea/libraries/Maven__com_fasterxml_jackson_datatype_jackson_datatype_jdk8_2_13_0.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../user/.idea/libraries/Maven__com_fasterxml_jackson_datatype_jackson_datatype_jsr310_2_13_0.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../user/.idea/libraries/Maven__com_fasterxml_jackson_module_jackson_module_parameter_names_2_13_0.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../user/.idea/libraries/Maven__com_fasterxml_woodstox_woodstox_core_6_2_1.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../user/.idea/libraries/Maven__com_google_code_gson_gson_2_8_9.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../user/.idea/libraries/Maven__com_google_guava_guava_19_0.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../user/.idea/libraries/Maven__com_google_inject_guice_4_1_0.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../user/.idea/libraries/Maven__com_jayway_jsonpath_json_path_2_6_0.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../user/.idea/libraries/Maven__com_netflix_eureka_eureka_client_1_10_17.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../user/.idea/libraries/Maven__com_netflix_eureka_eureka_core_1_10_17.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../user/.idea/libraries/Maven__com_netflix_netflix_commons_netflix_eventbus_0_3_0.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../user/.idea/libraries/Maven__com_netflix_netflix_commons_netflix_infix_0_3_0.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../user/.idea/libraries/Maven__com_netflix_servo_servo_core_0_12_21.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../user/.idea/libraries/Maven__com_stoyanr_evictor_1_0_0.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../user/.idea/libraries/Maven__com_thoughtworks_xstream_xstream_1_4_18.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../user/.idea/libraries/Maven__com_vaadin_external_google_android_json_0_0_20131108_vaadin1.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../user/.idea/libraries/Maven__commons_codec_commons_codec_1_15.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../user/.idea/libraries/Maven__commons_configuration_commons_configuration_1_10.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../user/.idea/libraries/Maven__commons_fileupload_commons_fileupload_1_4.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../user/.idea/libraries/Maven__commons_io_commons_io_2_2.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../user/.idea/libraries/Maven__commons_jxpath_commons_jxpath_1_3.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../user/.idea/libraries/Maven__commons_lang_commons_lang_2_6.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../user/.idea/libraries/Maven__io_github_classgraph_classgraph_4_8_69.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../user/.idea/libraries/Maven__io_github_openfeign_feign_core_11_7.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../user/.idea/libraries/Maven__io_github_openfeign_feign_slf4j_11_7.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../user/.idea/libraries/Maven__io_github_openfeign_form_feign_form_3_8_0.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../user/.idea/libraries/Maven__io_github_openfeign_form_feign_form_spring_3_8_0.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../user/.idea/libraries/Maven__io_github_resilience4j_resilience4j_annotations_1_7_0.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../user/.idea/libraries/Maven__io_github_resilience4j_resilience4j_bulkhead_1_7_0.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../user/.idea/libraries/Maven__io_github_resilience4j_resilience4j_circuitbreaker_1_7_0.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../user/.idea/libraries/Maven__io_github_resilience4j_resilience4j_circularbuffer_1_7_0.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../user/.idea/libraries/Maven__io_github_resilience4j_resilience4j_consumer_1_7_0.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../user/.idea/libraries/Maven__io_github_resilience4j_resilience4j_core_1_7_0.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../user/.idea/libraries/Maven__io_github_resilience4j_resilience4j_framework_common_1_7_0.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../user/.idea/libraries/Maven__io_github_resilience4j_resilience4j_micrometer_1_7_0.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../user/.idea/libraries/Maven__io_github_resilience4j_resilience4j_ratelimiter_1_7_0.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../user/.idea/libraries/Maven__io_github_resilience4j_resilience4j_retry_1_7_0.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../user/.idea/libraries/Maven__io_github_resilience4j_resilience4j_spring_1_7_0.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../user/.idea/libraries/Maven__io_github_resilience4j_resilience4j_spring_boot2_1_7_0.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../user/.idea/libraries/Maven__io_github_resilience4j_resilience4j_timelimiter_1_7_0.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../user/.idea/libraries/Maven__io_github_x_stream_mxparser_1_2_2.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../user/.idea/libraries/Maven__io_micrometer_micrometer_core_1_8_0.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../user/.idea/libraries/Maven__io_projectreactor_addons_reactor_extra_3_4_5.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../user/.idea/libraries/Maven__io_projectreactor_reactor_core_3_4_12.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../user/.idea/libraries/Maven__io_swagger_core_v3_swagger_annotations_2_1_6.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../user/.idea/libraries/Maven__io_swagger_core_v3_swagger_core_2_1_6.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../user/.idea/libraries/Maven__io_swagger_core_v3_swagger_integration_2_1_6.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../user/.idea/libraries/Maven__io_swagger_core_v3_swagger_models_2_1_6.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../user/.idea/libraries/Maven__io_vavr_vavr_0_10_2.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../user/.idea/libraries/Maven__io_vavr_vavr_match_0_10_2.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../user/.idea/libraries/Maven__jakarta_activation_jakarta_activation_api_1_2_2.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../user/.idea/libraries/Maven__jakarta_annotation_jakarta_annotation_api_1_3_5.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../user/.idea/libraries/Maven__jakarta_validation_jakarta_validation_api_2_0_2.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../user/.idea/libraries/Maven__jakarta_xml_bind_jakarta_xml_bind_api_2_3_3.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../user/.idea/libraries/Maven__javax_inject_javax_inject_1.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../user/.idea/libraries/Maven__javax_ws_rs_jsr311_api_1_1_1.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../user/.idea/libraries/Maven__joda_time_joda_time_2_3.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../user/.idea/libraries/Maven__net_bytebuddy_byte_buddy_1_11_22.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../user/.idea/libraries/Maven__net_bytebuddy_byte_buddy_agent_1_11_22.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../user/.idea/libraries/Maven__net_minidev_accessors_smart_2_4_7.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../user/.idea/libraries/Maven__net_minidev_json_smart_2_4_7.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../user/.idea/libraries/Maven__org_antlr_antlr_runtime_3_4.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../user/.idea/libraries/Maven__org_antlr_stringtemplate_3_2_1.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../user/.idea/libraries/Maven__org_apache_commons_commons_lang3_3_12_0.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../user/.idea/libraries/Maven__org_apache_commons_commons_math_2_2.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../user/.idea/libraries/Maven__org_apache_httpcomponents_httpclient_4_5_13.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../user/.idea/libraries/Maven__org_apache_httpcomponents_httpcore_4_4_14.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../user/.idea/libraries/Maven__org_apache_logging_log4j_log4j_api_2_14_1.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../user/.idea/libraries/Maven__org_apache_logging_log4j_log4j_to_slf4j_2_14_1.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../user/.idea/libraries/Maven__org_apache_tomcat_embed_tomcat_embed_core_9_0_55.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../user/.idea/libraries/Maven__org_apache_tomcat_embed_tomcat_embed_el_9_0_55.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../user/.idea/libraries/Maven__org_apache_tomcat_embed_tomcat_embed_websocket_9_0_55.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../user/.idea/libraries/Maven__org_aspectj_aspectjweaver_1_9_7.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../user/.idea/libraries/Maven__org_assertj_assertj_core_3_21_0.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../user/.idea/libraries/Maven__org_bouncycastle_bcpkix_jdk15on_1_68.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../user/.idea/libraries/Maven__org_bouncycastle_bcprov_jdk15on_1_68.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../user/.idea/libraries/Maven__org_codehaus_jettison_jettison_1_4_0.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../user/.idea/libraries/Maven__org_codehaus_woodstox_stax2_api_4_2_1.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../user/.idea/libraries/Maven__org_hamcrest_hamcrest_2_2.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../user/.idea/libraries/Maven__org_hdrhistogram_HdrHistogram_2_1_12.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../user/.idea/libraries/Maven__org_junit_jupiter_junit_jupiter_5_8_1.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../user/.idea/libraries/Maven__org_junit_jupiter_junit_jupiter_params_5_8_1.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../user/.idea/libraries/Maven__org_junit_platform_junit_platform_commons_1_8_1.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../user/.idea/libraries/Maven__org_junit_platform_junit_platform_engine_1_8_1.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../user/.idea/libraries/Maven__org_latencyutils_LatencyUtils_2_0_3.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../user/.idea/libraries/Maven__org_mockito_mockito_core_4_0_0.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../user/.idea/libraries/Maven__org_mockito_mockito_junit_jupiter_4_0_0.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../user/.idea/libraries/Maven__org_mongodb_bson_4_4_0.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../user/.idea/libraries/Maven__org_mongodb_mongodb_driver_core_4_4_0.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../user/.idea/libraries/Maven__org_mongodb_mongodb_driver_sync_4_4_0.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../user/.idea/libraries/Maven__org_objenesis_objenesis_3_2.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../user/.idea/libraries/Maven__org_ow2_asm_asm_9_1.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../user/.idea/libraries/Maven__org_projectlombok_lombok_1_18_22.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../user/.idea/libraries/Maven__org_reactivestreams_reactive_streams_1_0_3.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../user/.idea/libraries/Maven__org_skyscreamer_jsonassert_1_5_0.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../user/.idea/libraries/Maven__org_slf4j_jul_to_slf4j_1_7_32.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../user/.idea/libraries/Maven__org_slf4j_slf4j_api_1_7_32.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../user/.idea/libraries/Maven__org_springdoc_springdoc_openapi_common_1_5_2.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../user/.idea/libraries/Maven__org_springdoc_springdoc_openapi_ui_1_5_2.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../user/.idea/libraries/Maven__org_springdoc_springdoc_openapi_webmvc_core_1_5_2.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../user/.idea/libraries/Maven__org_springframework_boot_spring_boot_2_6_1.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../user/.idea/libraries/Maven__org_springframework_boot_spring_boot_actuator_2_6_1.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../user/.idea/libraries/Maven__org_springframework_boot_spring_boot_actuator_autoconfigure_2_6_1.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../user/.idea/libraries/Maven__org_springframework_boot_spring_boot_autoconfigure_2_6_1.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../user/.idea/libraries/Maven__org_springframework_boot_spring_boot_devtools_2_6_1.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../user/.idea/libraries/Maven__org_springframework_boot_spring_boot_starter_2_6_1.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../user/.idea/libraries/Maven__org_springframework_boot_spring_boot_starter_actuator_2_6_1.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../user/.idea/libraries/Maven__org_springframework_boot_spring_boot_starter_aop_2_6_1.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../user/.idea/libraries/Maven__org_springframework_boot_spring_boot_starter_cache_2_6_1.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../user/.idea/libraries/Maven__org_springframework_boot_spring_boot_starter_data_mongodb_2_6_1.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../user/.idea/libraries/Maven__org_springframework_boot_spring_boot_starter_json_2_6_1.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../user/.idea/libraries/Maven__org_springframework_boot_spring_boot_starter_logging_2_6_1.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../user/.idea/libraries/Maven__org_springframework_boot_spring_boot_starter_test_2_6_1.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../user/.idea/libraries/Maven__org_springframework_boot_spring_boot_starter_tomcat_2_6_1.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../user/.idea/libraries/Maven__org_springframework_boot_spring_boot_starter_web_2_6_1.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../user/.idea/libraries/Maven__org_springframework_boot_spring_boot_test_2_6_1.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../user/.idea/libraries/Maven__org_springframework_boot_spring_boot_test_autoconfigure_2_6_1.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../user/.idea/libraries/Maven__org_springframework_cloud_spring_cloud_commons_3_1_0.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../user/.idea/libraries/Maven__org_springframework_cloud_spring_cloud_config_client_3_1_0.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../user/.idea/libraries/Maven__org_springframework_cloud_spring_cloud_context_3_1_0.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../user/.idea/libraries/Maven__org_springframework_cloud_spring_cloud_loadbalancer_3_1_0.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../user/.idea/libraries/Maven__org_springframework_cloud_spring_cloud_netflix_eureka_client_3_1_0.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../user/.idea/libraries/Maven__org_springframework_cloud_spring_cloud_openfeign_core_3_1_0.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../user/.idea/libraries/Maven__org_springframework_cloud_spring_cloud_starter_3_1_0.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../user/.idea/libraries/Maven__org_springframework_cloud_spring_cloud_starter_bootstrap_3_1_0.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../user/.idea/libraries/Maven__org_springframework_cloud_spring_cloud_starter_config_3_1_0.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../user/.idea/libraries/Maven__org_springframework_cloud_spring_cloud_starter_loadbalancer_3_1_0.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../user/.idea/libraries/Maven__org_springframework_cloud_spring_cloud_starter_netflix_eureka_client_3_1_0.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../user/.idea/libraries/Maven__org_springframework_cloud_spring_cloud_starter_openfeign_3_1_0.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../user/.idea/libraries/Maven__org_springframework_data_spring_data_commons_2_6_0.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../user/.idea/libraries/Maven__org_springframework_data_spring_data_mongodb_3_3_0.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../user/.idea/libraries/Maven__org_springframework_security_spring_security_crypto_5_6_0.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../user/.idea/libraries/Maven__org_springframework_security_spring_security_rsa_1_0_10_RELEASE.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../user/.idea/libraries/Maven__org_springframework_spring_aop_5_3_13.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../user/.idea/libraries/Maven__org_springframework_spring_beans_5_3_13.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../user/.idea/libraries/Maven__org_springframework_spring_context_5_3_13.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../user/.idea/libraries/Maven__org_springframework_spring_context_support_5_3_13.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../user/.idea/libraries/Maven__org_springframework_spring_core_5_3_13.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../user/.idea/libraries/Maven__org_springframework_spring_expression_5_3_13.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../user/.idea/libraries/Maven__org_springframework_spring_jcl_5_3_13.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../user/.idea/libraries/Maven__org_springframework_spring_test_5_3_13.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../user/.idea/libraries/Maven__org_springframework_spring_tx_5_3_13.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../user/.idea/libraries/Maven__org_springframework_spring_web_5_3_13.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../user/.idea/libraries/Maven__org_springframework_spring_webmvc_5_3_13.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../user/.idea/libraries/Maven__org_webjars_swagger_ui_3_38_0.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../user/.idea/libraries/Maven__org_webjars_webjars_locator_core_0_48.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../user/.idea/libraries/Maven__org_xmlunit_xmlunit_core_2_8_3.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../user/.idea/libraries/Maven__org_yaml_snakeyaml_1_29.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../user/.idea/libraries/Maven__xmlpull_xmlpull_1_1_3_1.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../user/.idea/modules.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../user/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../user/user/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../user/user/.mvn/wrapper/MavenWrapperDownloader.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../user/user/.mvn/wrapper/maven-wrapper.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../user/user/.mvn/wrapper/maven-wrapper.properties" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../user/user/mvnw" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../user/user/mvnw.cmd" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../user/user/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../user/user/src/main/java/com/musku/user/UserApplication.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../user/user/src/main/java/com/musku/user/controller/Controller.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../user/user/src/main/java/com/musku/user/controller/UserNotFoundException.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../user/user/src/main/java/com/musku/user/entity/Category.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../user/user/src/main/java/com/musku/user/entity/Coupon.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../user/user/src/main/java/com/musku/user/entity/Role.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../user/user/src/main/java/com/musku/user/entity/User.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../user/user/src/main/java/com/musku/user/exception/ExceptionResponse.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../user/user/src/main/java/com/musku/user/exception/RestResponseEntityExceptionHandler.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../user/user/src/main/java/com/musku/user/proxy/CouponFeignProxy.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../user/user/src/main/java/com/musku/user/repository/RoleRepository.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../user/user/src/main/java/com/musku/user/repository/UserRepository.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../user/user/src/main/java/com/musku/user/service/UserService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../user/user/src/main/resources/application.properties" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../user/user/src/main/resources/application.yml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../user/user/src/test/java/com/musku/user/UserApplicationTests.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../admin/admin/src/main/java/com/musku/admin/MyConfiguration.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../api-gateway/api-gateway/src/main/java/com/musku/apigateway/AddControlHeaderWebFilter.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../api-gateway/api-gateway/src/main/java/com/musku/apigateway/CorsConfig.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../api-gateway/api-gateway/src/main/resources/application.yml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../cloud-config-server/cloud-config-server/src/main/resources/application.yml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../cloud-config-server/cloud-config-server/src/main/resources/config/admin-service.yml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../cloud-config-server/cloud-config-server/src/main/resources/config/company-service.yml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../cloud-config-server/cloud-config-server/src/main/resources/config/coupons-service.yml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../cloud-config-server/cloud-config-server/src/main/resources/config/gateway-service.yml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../cloud-config-server/cloud-config-server/src/main/resources/config/user-service.yml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/company/src/main/java/com/musku/company/MyConfiguration.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../coupon-new/.idea/libraries/Maven__org_springframework_cloud_spring_cloud_config_client_3_1_0.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../coupon-new/.idea/libraries/Maven__org_springframework_cloud_spring_cloud_starter_bootstrap_3_1_0.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../coupon-new/.idea/libraries/Maven__org_springframework_cloud_spring_cloud_starter_config_3_1_0.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../coupon-new/coupon/src/main/java/com/musku/coupon/MyConfiguration.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../user/user/src/main/java/com/musku/user/MyConfiguration.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../admin/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../admin/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../admin/admin/src/main/java/com/musku/admin/controller/Controller.java" beforeDir="false" afterPath="$PROJECT_DIR$/../admin/admin/src/main/java/com/musku/admin/controller/Controller.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../admin/admin/src/main/java/com/musku/admin/customer/Customer.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../admin/admin/src/main/java/com/musku/admin/customer/CustomerController.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../admin/admin/src/main/java/com/musku/admin/customer/CustomerRepository.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../admin/admin/src/main/java/com/musku/admin/customer/CustomerService.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../admin/admin/src/main/java/com/musku/admin/entity/Coupon.java" beforeDir="false" afterPath="$PROJECT_DIR$/../admin/admin/src/main/java/com/musku/admin/entity/Coupon.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../admin/admin/src/main/java/com/musku/admin/entity/User.java" beforeDir="false" afterPath="$PROJECT_DIR$/../admin/admin/src/main/java/com/musku/admin/entity/User.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../admin/admin/src/main/java/com/musku/admin/repository/RoleRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/../admin/admin/src/main/java/com/musku/admin/repository/RoleRepository.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../admin/admin/src/main/java/com/musku/admin/repository/UserRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/../admin/admin/src/main/java/com/musku/admin/repository/UserRepository.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../admin/admin/src/main/java/com/musku/admin/service/UserService.java" beforeDir="false" afterPath="$PROJECT_DIR$/../admin/admin/src/main/java/com/musku/admin/service/UserService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../admin/admin/src/test/java/com/musku/admin/AdminApplicationTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/../admin/admin/src/test/java/com/musku/admin/AdminApplicationTests.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_apiguardian_apiguardian_api_1_1_2.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../user/.idea/libraries/Maven__org_apiguardian_apiguardian_api_1_1_2.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_junit_jupiter_junit_jupiter_api_5_8_1.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../user/.idea/libraries/Maven__org_junit_jupiter_junit_jupiter_api_5_8_1.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_junit_jupiter_junit_jupiter_engine_5_8_1.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../user/.idea/libraries/Maven__org_junit_jupiter_junit_jupiter_engine_5_8_1.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_opentest4j_opentest4j_1_2_0.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../user/.idea/libraries/Maven__org_opentest4j_opentest4j_1_2_0.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../admin/admin/src/main/java/com/musku/admin/AdminApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/../admin/admin/src/main/java/com/musku/admin/AdminApplication.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../admin/admin/src/main/java/com/musku/admin/proxy/CouponFeignProxy.java" beforeDir="false" afterPath="$PROJECT_DIR$/../admin/admin/src/main/java/com/musku/admin/proxy/CouponFeignProxy.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../admin/admin/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/../admin/admin/src/main/resources/application.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../admin/admin/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/../admin/admin/src/main/resources/application.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../api-gateway/.idea/libraries/Maven__io_github_classgraph_classgraph_4_8_115.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../api-gateway/.idea/libraries/Maven__io_github_classgraph_classgraph_4_8_69.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../api-gateway/.idea/libraries/Maven__io_swagger_core_v3_swagger_annotations_2_1_1.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../api-gateway/.idea/libraries/Maven__io_swagger_core_v3_swagger_annotations_2_1_6.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../api-gateway/.idea/libraries/Maven__io_swagger_core_v3_swagger_core_2_1_1.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../api-gateway/.idea/libraries/Maven__io_swagger_core_v3_swagger_core_2_1_6.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../api-gateway/.idea/libraries/Maven__io_swagger_core_v3_swagger_integration_2_1_1.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../api-gateway/.idea/libraries/Maven__io_swagger_core_v3_swagger_integration_2_1_6.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../api-gateway/.idea/libraries/Maven__io_swagger_core_v3_swagger_models_2_1_1.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../api-gateway/.idea/libraries/Maven__io_swagger_core_v3_swagger_models_2_1_6.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../api-gateway/.idea/libraries/Maven__javax_activation_javax_activation_api_1_2_0.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../api-gateway/.idea/libraries/Maven__javax_validation_validation_api_2_0_1_Final.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../api-gateway/.idea/libraries/Maven__javax_xml_bind_jaxb_api_2_3_1.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../api-gateway/.idea/libraries/Maven__org_springdoc_springdoc_openapi_common_1_2_31.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../api-gateway/.idea/libraries/Maven__org_springdoc_springdoc_openapi_common_1_5_2.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../api-gateway/.idea/libraries/Maven__org_springdoc_springdoc_openapi_webflux_core_1_2_31.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../api-gateway/.idea/libraries/Maven__org_springdoc_springdoc_openapi_webflux_core_1_5_2.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../api-gateway/.idea/libraries/Maven__org_springdoc_springdoc_openapi_webflux_ui_1_2_31.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../api-gateway/.idea/libraries/Maven__org_springdoc_springdoc_openapi_webflux_ui_1_5_2.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../api-gateway/.idea/libraries/Maven__org_webjars_swagger_ui_3_25_0.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../api-gateway/.idea/libraries/Maven__org_webjars_swagger_ui_3_38_0.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../api-gateway/.idea/libraries/Maven__org_webjars_webjars_locator_0_38.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../api-gateway/api-gateway/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../api-gateway/api-gateway/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../api-gateway/api-gateway/src/main/java/com/musku/apigateway/ApiGatewayApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/../api-gateway/api-gateway/src/main/java/com/musku/apigateway/ApiGatewayApplication.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../api-gateway/api-gateway/src/main/java/com/musku/apigateway/ApiGatewayConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/../api-gateway/api-gateway/src/main/java/com/musku/apigateway/ApiGatewayConfig.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../api-gateway/api-gateway/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/../api-gateway/api-gateway/src/main/resources/application.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../cloud-config-server/cloud-config-server/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../cloud-config-server/cloud-config-server/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../cloud-config-server/cloud-config-server/src/main/java/com/musku/cloudconfigserver/CloudConfigServerApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/../cloud-config-server/cloud-config-server/src/main/java/com/musku/cloudconfigserver/CloudConfigServerApplication.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/company/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/company/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/company/src/main/java/com/musku/company/controller/CompanyController.java" beforeDir="false" afterPath="$PROJECT_DIR$/company/src/main/java/com/musku/company/controller/CompanyController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/company/src/main/java/com/musku/company/CompanyApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/company/src/main/java/com/musku/company/CompanyApplication.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/company/src/main/java/com/musku/company/controller/CompanyController.java" beforeDir="false" afterPath="$PROJECT_DIR$/company/src/main/java/com/musku/company/comments/CompanyController.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/company/src/main/java/com/musku/company/controller/Controller.java" beforeDir="false" afterPath="$PROJECT_DIR$/company/src/main/java/com/musku/company/controller/Controller.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/company/src/main/java/com/musku/company/entity/Company.java" beforeDir="false" afterPath="$PROJECT_DIR$/company/src/main/java/com/musku/company/entity/Company.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/company/src/main/java/com/musku/company/entity/Coupon.java" beforeDir="false" afterPath="$PROJECT_DIR$/company/src/main/java/com/musku/company/entity/Coupon.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/company/src/main/java/com/musku/company/entity/DatabaseCompanySequence.java" beforeDir="false" afterPath="$PROJECT_DIR$/company/src/main/java/com/musku/company/entity/DatabaseCompanySequence.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/company/src/main/java/com/musku/company/entity/User.java" beforeDir="false" afterPath="$PROJECT_DIR$/company/src/main/java/com/musku/company/entity/User.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/company/src/main/java/com/musku/company/repository/CompanyRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/company/src/main/java/com/musku/company/repository/CompanyRepository.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/company/src/main/java/com/musku/company/service/CompanyService.java" beforeDir="false" afterPath="$PROJECT_DIR$/company/src/main/java/com/musku/company/service/CompanyService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/company/src/main/java/com/musku/company/service/SequenceAdminGenerator.java" beforeDir="false" afterPath="$PROJECT_DIR$/company/src/main/java/com/musku/company/service/SequenceAdminGenerator.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/company/src/main/java/com/musku/company/service/UserService.java" beforeDir="false" afterPath="$PROJECT_DIR$/company/src/main/java/com/musku/company/service/UserService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/company/src/main/java/com/musku/company/entity/Company.java" beforeDir="false" afterPath="$PROJECT_DIR$/company/src/main/java/com/musku/company/comments/Company.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/company/src/main/java/com/musku/company/entity/DatabaseCompanySequence.java" beforeDir="false" afterPath="$PROJECT_DIR$/company/src/main/java/com/musku/company/comments/DatabaseCompanySequence.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/company/src/main/java/com/musku/company/proxy/CouponFeintProxy.java" beforeDir="false" afterPath="$PROJECT_DIR$/company/src/main/java/com/musku/company/proxy/CouponFeintProxy.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/company/src/main/java/com/musku/company/repository/CompanyRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/company/src/main/java/com/musku/company/comments/CompanyRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/company/src/main/java/com/musku/company/service/CompanyService.java" beforeDir="false" afterPath="$PROJECT_DIR$/company/src/main/java/com/musku/company/comments/CompanyService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/company/src/main/java/com/musku/company/service/SequenceAdminGenerator.java" beforeDir="false" afterPath="$PROJECT_DIR$/company/src/main/java/com/musku/company/comments/SequenceAdminGenerator.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/company/src/main/java/com/musku/company/service/UserModelListener.java" beforeDir="false" afterPath="$PROJECT_DIR$/company/src/main/java/com/musku/company/comments/UserModelListener.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/company/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/company/src/main/resources/application.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/company/src/test/java/com/musku/company/CompanyApplicationTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/company/src/test/java/com/musku/company/CompanyApplicationTests.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../coupon-new/.idea/libraries/Maven__org_apiguardian_apiguardian_api_1_1_2.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_apiguardian_apiguardian_api_1_0_0.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../coupon-new/.idea/libraries/Maven__org_junit_jupiter_junit_jupiter_api_5_8_1.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_junit_jupiter_junit_jupiter_api_5_4_0.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../coupon-new/.idea/libraries/Maven__org_junit_jupiter_junit_jupiter_engine_5_8_1.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_junit_jupiter_junit_jupiter_engine_5_4_0.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../coupon-new/.idea/libraries/Maven__org_opentest4j_opentest4j_1_2_0.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_opentest4j_opentest4j_1_1_1.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../coupon-new/coupon/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../coupon-new/coupon/pom.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../coupon-new/coupon/src/main/java/com/musku/coupon/CouponApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/../coupon-new/coupon/src/main/java/com/musku/coupon/CouponApplication.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../coupon-new/coupon/src/main/java/com/musku/coupon/controller/CouponController.java" beforeDir="false" afterPath="$PROJECT_DIR$/../coupon-new/coupon/src/main/java/com/musku/coupon/controller/CouponController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../coupon-new/coupon/src/main/java/com/musku/coupon/customer/Customer.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../coupon-new/coupon/src/main/java/com/musku/coupon/customer/CustomerController.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../coupon-new/coupon/src/main/java/com/musku/coupon/customer/CustomerRepository.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../coupon-new/coupon/src/main/java/com/musku/coupon/customer/CustomerService.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../coupon-new/coupon/src/main/java/com/musku/coupon/entity/Coupon.java" beforeDir="false" afterPath="$PROJECT_DIR$/../coupon-new/coupon/src/main/java/com/musku/coupon/entity/Coupon.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../coupon-new/coupon/src/main/java/com/musku/coupon/entity/DatabaseSequence.java" beforeDir="false" afterPath="$PROJECT_DIR$/../coupon-new/coupon/src/main/java/com/musku/coupon/entity/DatabaseSequence.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../coupon-new/coupon/src/main/java/com/musku/coupon/controller/UserNotFoundException.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../coupon-new/coupon/src/main/java/com/musku/coupon/entity/DatabaseSequence.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../coupon-new/coupon/src/main/java/com/musku/coupon/entity/User.java" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/../coupon-new/coupon/src/main/java/com/musku/coupon/repository/CouponRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/../coupon-new/coupon/src/main/java/com/musku/coupon/repository/CouponRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../coupon-new/coupon/src/main/java/com/musku/coupon/service/CollectionsConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/../coupon-new/coupon/src/main/java/com/musku/coupon/service/CollectionsConfig.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../coupon-new/coupon/src/main/java/com/musku/coupon/service/CouponService.java" beforeDir="false" afterPath="$PROJECT_DIR$/../coupon-new/coupon/src/main/java/com/musku/coupon/service/CouponService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../coupon-new/coupon/src/main/java/com/musku/coupon/service/SequenceGeneratorService.java" beforeDir="false" afterPath="$PROJECT_DIR$/../coupon-new/coupon/src/main/java/com/musku/coupon/service/SequenceGeneratorService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../coupon-new/coupon/src/main/java/com/musku/coupon/service/SequenceGeneratorService.java" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/../coupon-new/coupon/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/../coupon-new/coupon/src/main/resources/application.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../coupon-new/coupon/src/test/java/com/musku/coupon/CouponApplicationTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/../coupon-new/coupon/src/test/java/com/musku/coupon/CouponApplicationTests.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../user/.gitignore" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../user/.mvn/wrapper/MavenWrapperDownloader.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../user/.mvn/wrapper/maven-wrapper.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../user/.mvn/wrapper/maven-wrapper.properties" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../user/mvnw" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../user/mvnw.cmd" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../user/pom.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../user/src/main/java/com/dcfuser/user/SwaggerConfig.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../user/src/main/java/com/dcfuser/user/UserApplication.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../user/src/main/java/com/dcfuser/user/controller/Controller.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../user/src/main/java/com/dcfuser/user/controller/UserNotFoundException.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../user/src/main/java/com/dcfuser/user/customer/Customer.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../user/src/main/java/com/dcfuser/user/customer/CustomerController.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../user/src/main/java/com/dcfuser/user/customer/CustomerRepository.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../user/src/main/java/com/dcfuser/user/customer/CustomerService.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../user/src/main/java/com/dcfuser/user/entity/Category.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../user/src/main/java/com/dcfuser/user/entity/Coupon.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../user/src/main/java/com/dcfuser/user/entity/Role.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../user/src/main/java/com/dcfuser/user/entity/User.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../user/src/main/java/com/dcfuser/user/exception/ExceptionResponse.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../user/src/main/java/com/dcfuser/user/exception/RestResponseEntityExceptionHandler.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../user/src/main/java/com/dcfuser/user/proxy/CouponFeintProxy.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../user/src/main/java/com/dcfuser/user/repository/RoleRepository.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../user/src/main/java/com/dcfuser/user/repository/UserRepository.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../user/src/main/java/com/dcfuser/user/service/UserService.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../user/src/main/resources/application.properties" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../user/src/main/resources/application.yml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../user/src/test/java/com/dcfuser/user/UserApplicationTests.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../zuul-security/zuul-security/src/main/java/com/musku/zuulsecurity/services/CustomUserDetailsService.java" beforeDir="false" afterPath="$PROJECT_DIR$/../zuul-security/zuul-security/src/main/java/com/musku/zuulsecurity/services/CustomUserDetailsService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../coupon-new/coupon/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/../coupon-new/coupon/src/main/resources/application.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../naming-server/naming-server/src/main/java/com/musku/namingserver/NamingServerApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/../naming-server/naming-server/src/main/java/com/musku/namingserver/NamingServerApplication.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../naming-server/naming-server/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/../naming-server/naming-server/src/main/resources/application.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../user/user/src/main/java/com/musku/user/UserApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/../user/user/src/main/java/com/musku/user/UserApplication.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../user/user/src/main/java/com/musku/user/proxy/CouponFeignProxy.java" beforeDir="false" afterPath="$PROJECT_DIR$/../user/user/src/main/java/com/musku/user/proxy/CouponFeignProxy.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../user/user/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/../user/user/src/main/resources/application.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../zuul-security/zuul-security/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/../zuul-security/zuul-security/src/main/resources/application.yml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -291,15 +96,15 @@
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/../.." />
   </component>
   <component name="HighlightingSettingsPerFile">
-    <setting file="file://$PROJECT_DIR$/company/src/main/java/com/musku/company/repository/CompanyRepository.java" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/company/src/main/java/com/musku/company/comments/CompanyRepository.java" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/company/src/main/resources/application.yml" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/company/src/main/java/com/musku/company/CompanyApplication.java" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/company/src/main/java/com/musku/company/service/CompanyService.java" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/company/src/main/java/com/musku/company/comments/CompanyService.java" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/company/src/main/java/com/musku/company/proxy/CouponFeintProxy.java" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/company/src/main/resources/application.properties" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/company/src/main/java/com/musku/company/entity/Coupon.java" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/company/pom.xml" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/company/src/main/java/com/musku/company/controller/CompanyController.java" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/company/src/main/java/com/musku/company/comments/CompanyController.java" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/company/src/main/java/com/musku/company/entity/Category.java" root0="FORCE_HIGHLIGHTING" />
   </component>
   <component name="ProjectId" id="21zMpvnBB2F7RG8mbrcp97oPzlq" />
@@ -323,7 +128,11 @@
       <recent name="C:\Users\KREDDYMU\OneDrive - Capgemini\Desktop\DCFApp\DCF-backend\company\company\src\main\resources" />
       <recent name="C:\Users\KREDDYMU\OneDrive - Capgemini\Desktop\DCFApp\DCF-backend\company\company\src\main\java\com\musku\company" />
     </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\KREDDYMU\OneDrive - Capgemini\Desktop\DCFApp\DCF-backend\company\company\src\main\java\com\musku\company\comments" />
+    </key>
     <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="com.musku.company" />
       <recent name="com.musku.company.repository" />
       <recent name="com.musku.company.entity" />
     </key>

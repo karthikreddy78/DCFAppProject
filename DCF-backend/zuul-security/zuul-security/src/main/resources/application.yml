@@ -1,10 +1,28 @@
+hystrix:
+  command:
+    default:
+      execution:
+        isolation:
+          thread:
+            timeoutInMilliseconds: 30000
+ribbon:
+  ReadTimeout: 60000
+  connection-timeout: 3000
+  eureka:
+    enabled: true
+
+
 zuul:
   routes:
-    admin:
-      url: http://localhost:3500/admin/
-    company:
-      url: http://localhost:3800/company/
-    coupons:
-      url: http://localhost:2500/coupons/
-    users:
-      url: http://localhost:2000/users/
+    coupons-service:
+      path: /coupons/**
+      serviceId: coupons-service
+    admin-service:
+      path: /admin/**
+      serviceId: admin-service
+    user-service:
+      path: /users/**
+      serviceId: user-service
+    company-service:
+      path: /company/**
+      serviceId: company-service

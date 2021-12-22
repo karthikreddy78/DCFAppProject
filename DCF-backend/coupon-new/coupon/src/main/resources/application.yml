@@ -12,17 +12,7 @@ resilience4j:
         waitDurationInOpenState: 5s
         slidingWindowType: COUNT_BASED
 
-management:
-  health:
-    circuitbreakers:
-      enabled: true
-  endpoints:
-    web:
-      exposure:
-        include: health
-  endpoint:
-    health:
-      show-details: always
+
 
 
 

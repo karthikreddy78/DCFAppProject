@@ -1,0 +1,4 @@
+#enabling to use local classpath profile instead of git
+spring:
+  profiles:
+    active: native

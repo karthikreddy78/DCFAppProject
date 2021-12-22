@@ -1,4 +1,4 @@
-package com.musku.company.service;//package com.dcfuser.user.service;
+package com.musku.company.comments;//package com.dcfuser.user.service;
 //
 //import com.dcfuser.user.entity.User;
 //import org.springframework.beans.factory.annotation.Autowired;

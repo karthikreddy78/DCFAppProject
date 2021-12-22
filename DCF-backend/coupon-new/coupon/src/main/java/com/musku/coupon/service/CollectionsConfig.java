@@ -16,6 +16,7 @@ public class CollectionsConfig {
     @Autowired
     private MongoTemplate mongoTemplate;
 
+    //Adding a unique index to coupon name
     @PostConstruct
     public void initIndexes() {
         mongoTemplate.indexOps("coupons") // collection name string or .class
