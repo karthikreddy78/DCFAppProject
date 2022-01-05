@@ -1,0 +1,31 @@
+server:
+  port: 1000
+
+hystrix:
+  command:
+    default:
+      execution:
+        isolation:
+          thread:
+            timeoutInMilliseconds: 30000
+ribbon:
+  ReadTimeout: 60000
+  connection-timeout: 3000
+  eureka:
+    enabled: true
+
+
+zuul:
+  routes:
+    coupons-service:
+      path: /coupons/**
+      serviceId: coupons-service
+    admin-service:
+      path: /admin/**
+      serviceId: admin-service
+    user-service:
+      path: /users/**
+      serviceId: user-service
+    company-service:
+      path: /company/**
+      serviceId: company-service

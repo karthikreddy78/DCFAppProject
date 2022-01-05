@@ -4,12 +4,27 @@ hystrix:
       execution:
         isolation:
           thread:
-            timeoutInMilliseconds: 30000
+            timeoutInMilliseconds: 60000
 ribbon:
   ReadTimeout: 60000
-  connection-timeout: 3000
+  connection-timeout: 20000
   eureka:
     enabled: true
+
+springdoc:
+  swagger-ui:
+    use-root-path: true
+    urls:
+      - name: coupons
+        url: /coupons/v3/api-docs
+      - name: admin
+        url: /admin/v3/api-docs
+      - name: users
+        url: /users/v3/api-docs
+      - name: company
+        url: /company/v3/api-docs
+      - name: zuul
+        url: /v3/api-docs
 
 
 zuul:

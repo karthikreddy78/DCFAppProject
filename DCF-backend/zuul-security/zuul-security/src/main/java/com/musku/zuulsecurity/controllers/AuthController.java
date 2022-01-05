@@ -6,6 +6,7 @@ import java.util.HashMap;
 import java.util.Map;
 
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.security.authentication.AuthenticationManager;
 import org.springframework.security.authentication.BadCredentialsException;
@@ -39,7 +40,7 @@ public class AuthController {
 
     @SuppressWarnings("rawtypes")
     @PostMapping("/login")
-    public ResponseEntity login(@RequestBody AuthBody data) {
+    public ResponseEntity<?> login(@RequestBody AuthBody data) {
         try {
             String username = data.getEmail();
             System.out.println(username);
@@ -54,10 +55,10 @@ public class AuthController {
                     		
             		);
             String token = jwtTokenProvider.createToken(username, this.users.findByEmail(username).getRoles());
-            Map<Object, Object> model = new HashMap<>();
-            model.put("username", username);
-            model.put("token", token);
-            return ok(model);
+            User userExists = userService.findUserByEmail(username);
+            //userService.updateById(userExists, username, token);
+            
+            return new ResponseEntity<>(userService.updateById(userExists, username, token), HttpStatus.OK);
         } catch (AuthenticationException e) {
             throw new BadCredentialsException("Invalid email/password supplied");
         }
@@ -65,14 +66,12 @@ public class AuthController {
 
     @SuppressWarnings("rawtypes")
     @PostMapping("/register")
-    public ResponseEntity register(@RequestBody User user) {
+    public ResponseEntity<?> register(@RequestBody User user) {
         User userExists = userService.findUserByEmail(user.getEmail());
         if (userExists != null) {
-            throw new BadCredentialsException("User with username: " + user.getEmail() + " already exists");
+        	 return new ResponseEntity<>("Username exists",HttpStatus.CONFLICT);
         }
-        userService.saveUser(user);
-        Map<Object, Object> model = new HashMap<>();
-        model.put("message", "User registered successfully");
-        return ok(model);
+       // userService.saveUser(user);
+        return new ResponseEntity<>(userService.saveUser(user), HttpStatus.CREATED);
     }
 }

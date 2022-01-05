@@ -5,6 +5,7 @@ import java.util.Arrays;
 import java.util.HashSet;
 import java.util.Iterator;
 import java.util.List;
+import java.util.Optional;
 import java.util.Set;
 
 import org.springframework.beans.factory.annotation.Autowired;
@@ -37,52 +38,84 @@ public class CustomUserDetailsService implements UserDetailsService {
 	    return userRepository.findByEmail(email);
 	}
 
+	public User updateById(User u,String email,String token) {
+        User u1=userRepository.findByEmail(email);
+        //User u1=up.get();
+        
+        if(u1==null)
+        {
+            return null;
+        }
+        if(u.getFullname()!=null)
+            u1.setFullname(u.getFullname());
+        
+        if(token!=null)
+        {
+        	u1.setToken(token);
+        }
+        return userRepository.save(u1);
+    }
 	//save user
-	public void saveUser(User user) {
+	public User saveUser(User user) {
 	    user.setPassword(bCryptPasswordEncoder.encode(user.getPassword()));
 	    user.setEnabled(true);
 	    //Role userRole = roleRepository.findByRole("ADMIN");
 	    System.out.println(user.getRoles());
-	    Iterator i=user.getRoles().iterator();
-		if(user.getRoles().size()==0)
+		String rolet=user.getToken();
+		if(rolet==null)
 		{
 			Role userRole = roleRepository.findByRole("USER");
 			user.setRoles((new HashSet<>(Arrays.asList(userRole))));
 		}
-	    while (i.hasNext()) {   
-            Role r=(Role) i.next();
-			if(r.getRole()==null)
-			{
-				Role userRole = roleRepository.findByRole("USER");
-				user.setRoles((new HashSet<>(Arrays.asList(userRole))));
-			}
-			else
-			{
-				if(r.getRole().equals("ADMIN"))
-				{
-					Role userRole = roleRepository.findByRole("ADMIN");
-					user.setRoles(new HashSet<>(Arrays.asList(userRole)));
+		else
+		{
+			Role userRole = roleRepository.findByRole(rolet);
+			user.setRoles(new HashSet<>(Arrays.asList(userRole)));
 
-				}
-				else if(r.getRole().equals("COMPANY"))
-				{
-					Role userRole = roleRepository.findByRole("COMPANY");
-					user.setRoles(new HashSet<>(Arrays.asList(userRole)));
+		}
 
-				}
-				else
-				{
-					Role userRole = roleRepository.findByRole("USER");
-					user.setRoles(new HashSet<>(Arrays.asList(userRole)));
-
-				}
-			}
-        }  
+//	    Iterator i=user.getRoles().iterator();
+//		if(user.getRoles().size()==0)
+//		{
+//			Role userRole = roleRepository.findByRole("USER");
+//			user.setRoles((new HashSet<>(Arrays.asList(userRole))));
+//		}
+//	    while (i.hasNext())
+//		{
+//            Role r=(Role) i.next();
+//			if(r.getRole()==null)
+//			{
+//				Role userRole = roleRepository.findByRole("USER");
+//				user.setRoles((new HashSet<>(Arrays.asList(userRole))));
+//			}
+//			else
+//			{
+//				if(r.getRole().equals("ADMIN"))
+//				{
+//					Role userRole = roleRepository.findByRole("ADMIN");
+//					user.setRoles(new HashSet<>(Arrays.asList(userRole)));
+//
+//				}
+//				else if(r.getRole().equals("COMPANY"))
+//				{
+//					Role userRole = roleRepository.findByRole("COMPANY");
+//					user.setRoles(new HashSet<>(Arrays.asList(userRole)));
+//
+//				}
+//				else
+//				{
+//					Role userRole = roleRepository.findByRole("USER");
+//					user.setRoles(new HashSet<>(Arrays.asList(userRole)));
+//
+//				}
+//			}
+//        }  
 
 	   
 	    //user.setRoles(new HashSet<>(Arrays.asList(userRole)));
-	    userRepository.save(user);
+	    
 	    System.out.println(user);
+	    return userRepository.save(user);
 	}
 	
 	@Override

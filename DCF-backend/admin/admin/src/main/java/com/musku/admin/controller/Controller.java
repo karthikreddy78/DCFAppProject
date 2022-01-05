@@ -16,6 +16,7 @@ import java.util.List;
 
 @RestController
 @RequestMapping("/admin")
+
 public class Controller {
 
     @Autowired

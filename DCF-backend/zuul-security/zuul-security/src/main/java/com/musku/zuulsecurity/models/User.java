@@ -17,11 +17,19 @@ public class User {
     @Indexed(unique = true, direction = IndexDirection.DESCENDING, dropDups = true)
     private String email;
     private String password;
+    private String token;
     private String fullname;
     private boolean enabled;
     @DBRef
     private Set<Role> roles= new HashSet<>();
-    public String getId() {
+    
+    public String getToken() {
+		return token;
+	}
+	public void setToken(String token) {
+		this.token = token;
+	}
+	public String getId() {
         return id;
     }
     public void setId(String id) {

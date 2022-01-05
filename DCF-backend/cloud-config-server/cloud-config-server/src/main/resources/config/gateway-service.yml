@@ -1,51 +1,51 @@
-server:
-  port: 8765
-
-spring:
-  cloud:
-    gateway:
-      routes:
-        - id: coupons-service
-          uri: lb://coupons-service
-          predicates:
-            - Path=/coupons/**
-          filters:
-            - RewritePath=/coupons/(?<path>.*), /$\{path}
-        - id: company-service
-          uri: lb://company-service
-          predicates:
-            - Path=/company/**
-          filters:
-            - RewritePath=/company/(?<path>.*), /$\{path}
-        - id: user-service
-          uri: lb://user-service
-          predicates:
-            - Path=/users/**
-          filters:
-            - RewritePath=/users/(?<path>.*), /$\{path}
-        - id: admin-service
-          uri: lb://admin-service
-          predicates:
-            - Path=/admin/**
-          filters:
-            - RewritePath=/admin/(?<path>.*), /$\{path}
-        - id: openapi
-          uri: http://localhost:${server.port}
-          predicates:
-            - Path=/v3/api-docs/**
-          filters:
-            - RewritePath=/v3/api-docs/(?<path>.*), /$\{path}/v3/api-docs
-
-
-#setting up centralized swagger
-springdoc:
-  swagger-ui:
-    urls:
-      - name: coupons
-        url: /v3/api-docs/coupons
-      - name: admin
-        url: /v3/api-docs/admin
-      - name: users
-        url: /v3/api-docs/users
-      - name: company
-        url: /v3/api-docs/company
+#server:
+#  port: 8765
+#
+#spring:
+#  cloud:
+#    gateway:
+#      routes:
+#        - id: coupons-service
+#          uri: lb://coupons-service
+#          predicates:
+#            - Path=/coupons/**
+#          filters:
+#            - RewritePath=/coupons/(?<path>.*), /$\{path}
+#        - id: company-service
+#          uri: lb://company-service
+#          predicates:
+#            - Path=/company/**
+#          filters:
+#            - RewritePath=/company/(?<path>.*), /$\{path}
+#        - id: user-service
+#          uri: lb://user-service
+#          predicates:
+#            - Path=/users/**
+#          filters:
+#            - RewritePath=/users/(?<path>.*), /$\{path}
+#        - id: admin-service
+#          uri: lb://admin-service
+#          predicates:
+#            - Path=/admin/**
+#          filters:
+#            - RewritePath=/admin/(?<path>.*), /$\{path}
+#        - id: openapi
+#          uri: http://localhost:${server.port}
+#          predicates:
+#            - Path=/v3/api-docs/**
+#          filters:
+#            - RewritePath=/v3/api-docs/(?<path>.*), /$\{path}/v3/api-docs
+#
+#
+##setting up centralized swagger
+#springdoc:
+#  swagger-ui:
+#    urls:
+#      - name: coupons
+#        url: /v3/api-docs/coupons
+#      - name: admin
+#        url: /v3/api-docs/admin
+#      - name: users
+#        url: /v3/api-docs/users
+#      - name: company
+#        url: /v3/api-docs/company
