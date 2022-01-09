@@ -45,9 +45,9 @@ class CouponApplicationTests {
 	@Test
 	public void findCouponsById() {
 		String id="1";
-		when(couponRepository.findCouponsByCode(id)).thenReturn(new Coupon("1"));
+		when(couponRepository.findById(id).get()).thenReturn(new Coupon("1"));
 
-		assertEquals("1",couponRepository.findCouponsByCode(id).getCode());
+		assertEquals("1",couponRepository.findById(id).get().getCode());
 
 
 	}
@@ -56,7 +56,7 @@ class CouponApplicationTests {
 	public void findCouponsbyName()
 	{
 		String coupon="IDFC2021";
-		when((couponRepository.findCouponsByCouponname(coupon)))
+		when((couponRepository.findByCouponname(coupon)))
 				.thenReturn(new Coupon("2","amazon","IDFC2021"));
 
 		assertEquals(coupon,couponService.findByCouponname(coupon).getCouponname());
@@ -86,7 +86,7 @@ class CouponApplicationTests {
 	public void testdeleteCoupon()
 	{
 
-		when(couponRepository.findCouponsByCode("2")).thenReturn(new Coupon("2","amazon","IDFC2021"));
+		when(couponRepository.findById("2").get()).thenReturn(new Coupon("2","amazon","IDFC2021"));
 
 		couponService.deleteCouponById("2");
 		verify(couponRepository).deleteById("2");

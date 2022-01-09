@@ -127,6 +127,11 @@ public class Controller {
         User u= new User();
         return u;
     }
+    public Coupon couponresponse(Exception e)
+    {
+        Coupon c=new Coupon();
+        return c;
+    }
 
 
 

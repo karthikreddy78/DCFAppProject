@@ -28,7 +28,6 @@ public class CouponController {
 
     //Adding a coupon
     @PostMapping(path = "/addcoupon")
-    @CircuitBreaker(name = "default", fallbackMethod = "couponresponse")
     public Coupon postCoupon(@RequestBody Coupon u) {
         System.out.println(u);
         return couponService.create(u);
@@ -38,7 +37,9 @@ public class CouponController {
     @GetMapping(path = "/couponid/{id}")
     @CircuitBreaker(name = "default", fallbackMethod = "couponresponse")
     public Coupon showCouponById(@PathVariable String id) {
+    	System.out.println(id);
         Coupon u = couponService.findCouponsByCode(id);
+        System.out.println(u);
         if (u == null) {
             throw new CouponNotFoundException("id=" + id);
         }

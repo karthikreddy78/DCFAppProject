@@ -9,6 +9,8 @@ import io.github.resilience4j.circuitbreaker.annotation.CircuitBreaker;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.http.HttpStatus;
+import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
 
 import java.util.ArrayList;
@@ -82,6 +84,16 @@ public class Controller {
         }
         return u1;
     }
+    
+    @PostMapping(path ="/adduser")
+    public ResponseEntity<?> addUser(@RequestBody User user) {
+        User userExists = userService.findUserByEmail(user.getEmail());
+        if (userExists != null) {
+        	 return new ResponseEntity<>("Username exists",HttpStatus.CONFLICT);
+        }
+       // userService.saveUser(user);
+        return new ResponseEntity<>(userService.addUser(user), HttpStatus.CREATED);
+    }
 
 
 
@@ -127,11 +139,25 @@ public class Controller {
         List<Coupon> coupons = couponFeintProxy.showCoupons();
         return coupons;
     }
+    
+    @DeleteMapping(path = "/coupons/deletebyid/{id}")
+    public Coupon deleteCouponByID(@PathVariable String id)
+    {
+
+        return couponFeintProxy.deleteCouponByID(id);
+    }
+    
 
     public List<Coupon> hardcodedresponse(Exception e)
     {
         List<Coupon> c= new ArrayList<>();
         c.add(new Coupon());
+        return c;
+    }
+    
+    public Coupon couponresponse(Exception e)
+    {
+        Coupon c=new Coupon();
         return c;
     }
 

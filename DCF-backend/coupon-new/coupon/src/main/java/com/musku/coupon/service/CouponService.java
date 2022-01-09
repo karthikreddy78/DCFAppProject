@@ -20,7 +20,8 @@ public class CouponService {
     {
         // u.setId(service.getSequenceNumber(SEQUENCE_NAME));
         System.out.println(u);
-        Coupon p = couponRepository.findCouponsByCode(u.getCode());
+        Coupon p = couponRepository.findByCouponname(u.getCouponname());
+        System.out.println(p);
         if (p == null) {
             return couponRepository.save(u);
         }
@@ -37,12 +38,13 @@ public class CouponService {
     //Find Coupon BY code
     public Coupon findCouponsByCode(String code)
     {
-        return couponRepository.findCouponsByCode(code);
+    	//System.out.println(couponRepository.findCouponByCode(code));
+        return couponRepository.findById(code).get();
     }
     //find By Couponname
     public Coupon findByCouponname(String username)
     {
-        return couponRepository.findCouponsByCouponname(username);
+        return couponRepository.findByCouponname(username);
     }
 
     //Coupon By company
@@ -53,7 +55,7 @@ public class CouponService {
 
     //Update operation
     public Coupon updateById(Coupon u, String id) {
-        Coupon u1 = couponRepository.findCouponsByCode(id);
+        Coupon u1 = couponRepository.findById(id).get();
         if (u1 == null) {
             return null;
         }
@@ -63,6 +65,8 @@ public class CouponService {
             u1.setDescription(u.getDescription());
         if (u.getEndDate() != null)
             u1.setEndDate(u.getEndDate());
+        if (u.getStartDate() != null)
+            u1.setStartDate(u.getStartDate());
         if (u.getCode() != (null))
             u1.setCode(u.getCode());
         if (u.getCouponname() != (null))
@@ -75,7 +79,7 @@ public class CouponService {
     //Update By Coupon Name
     public Coupon updateByCouponname(Coupon u, String id)
     {
-        Coupon u1 = couponRepository.findCouponsByCouponname(id);
+        Coupon u1 = couponRepository.findByCouponname(id);
         if (u1 == null) {
             return null;
         }
@@ -100,7 +104,7 @@ public class CouponService {
     }
 
     public Coupon deleteCouponById(String id) {
-        Coupon p = couponRepository.findCouponsByCode(id);
+        Coupon p = couponRepository.findById(id).get();
         if (p == null)
             return null;
         couponRepository.deleteById(id);
@@ -109,7 +113,7 @@ public class CouponService {
 
     //Delete By Coupon Name
     public Coupon deleteCouponByCouponname(String id) {
-        Coupon p = couponRepository.findCouponsByCouponname(id);
+        Coupon p = couponRepository.findByCouponname(id);
         if (p == null)
             return null;
         couponRepository.deleteById(p.getCode());

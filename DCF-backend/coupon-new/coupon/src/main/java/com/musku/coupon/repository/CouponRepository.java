@@ -9,8 +9,7 @@ import java.util.List;
 @Repository
 public interface CouponRepository extends MongoRepository<Coupon,String> {
 
-    Coupon findCouponsByCode(String code);
-    Coupon findCouponsByCouponname(String couponname);
+    Coupon findByCouponname(String couponname);
     List<Coupon> findCouponsByCompany(String company);
 
 

@@ -8,6 +8,8 @@ import io.github.resilience4j.circuitbreaker.annotation.CircuitBreaker;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.http.HttpStatus;
+import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
 
 import java.util.ArrayList;
@@ -98,13 +100,31 @@ public class Controller {
         System.out.print(coupons);
         return coupons;
     }
+    
+    @GetMapping(path="coupons/couponname/{id}")
+    public Coupon showCByCN(@PathVariable String id)
+    {
+    	System.out.println(couponFeintProxy.showCouponByCouponname(id));
+    	return couponFeintProxy.showCouponByCouponname(id);
+    }
 
     //Post Coupon
     @PostMapping(path = "/coupons/addcoupon")
-    @CircuitBreaker(name = "default", fallbackMethod = "couponresponse")
     public Coupon postCouponN(@RequestBody Coupon u)
     {
-        return couponFeintProxy.postCoupon(u);
+    	System.out.println(u);
+    	System.out.println((u.getCouponname()));
+    	String id=u.getCouponname();
+    	//System.out.print(couponFeintProxy.showCouponByCouponname(id));
+//    	if(couponFeintProxy.showCouponByCouponname(u.getCouponname())!=null)
+//    	{
+//    		//System.out.println((couponFeintProxy.showCouponById(u.getCode())));
+//    		//return new ResponseEntity<>("Coupon exists",HttpStatus.CONFLICT);
+//    		return new Coupon();
+//    	}
+        // userService.saveUser(user);
+       // return new ResponseEntity<>(couponFeintProxy.postCoupon(u), HttpStatus.CREATED);
+    	return couponFeintProxy.postCoupon(u);
     }
 
     //Update coupon
@@ -120,9 +140,18 @@ public class Controller {
     @CircuitBreaker(name = "default", fallbackMethod = "couponresponse")
     public Coupon deleteUserByUsername(@PathVariable String id)
     {
+    	System.out.println("Delee COuponBYName:"+id);
 
         return couponFeintProxy.deleteUserByUsername(id);
     }
+    
+    @DeleteMapping(path = "/coupons/deletebyid/{id}")
+    public Coupon deleteCouponByID(@PathVariable String id)
+    {
+
+        return couponFeintProxy.deleteCouponByID(id);
+    }
+    
 
     //Circuit breaker
     public List<Coupon> hardcodedresponse(Exception e) {
