@@ -162,6 +162,8 @@ public class CouponController {
         if (u1 == null) {
             return null;
         }
+        if(u.getCost()!=0)
+        	u1.setCost(u.getCost());
         if (u.getCompany() != null)
             u1.setCompany(u.getCompany());
         if (u.getDescription() != null)

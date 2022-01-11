@@ -106,6 +106,10 @@ public class CouponService {
         if (u.getOffer() != 0)
             u1.setOffer(u.getOffer());
        
+        if(u.getCost()!=0)
+        {
+        	u1.setCost(u.getCost());
+        }
         if(u.getStartDate()!=null)
             u1.setStartDate(u.getStartDate());
         if(u.getUrl()!=null)
@@ -126,6 +130,10 @@ public class CouponService {
         System.out.println("Coupon Service="+u1);
         if (u1 == null) {
             return null;
+        }
+        if(u.getCost()!=0)
+        {
+        	u1.setCost(u.getCost());
         }
         if(u.getCategory()!=null)
             u1.setCategory(u.getCategory());

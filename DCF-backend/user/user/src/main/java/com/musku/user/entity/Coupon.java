@@ -6,6 +6,7 @@ import org.springframework.data.mongodb.core.index.Indexed;
 import org.springframework.data.mongodb.core.mapping.DBRef;
 import org.springframework.data.mongodb.core.mapping.Document;
 
+
 import java.util.Date;
 
 
@@ -31,11 +32,20 @@ public class Coupon {
     private String url;
     //private String code;
 
+    private int cost;
+    
 
 
 
+    public int getCost() {
+		return cost;
+	}
 
-    public String getUrl() {
+	public void setCost(int cost) {
+		this.cost = cost;
+	}
+
+	public String getUrl() {
         return url;
     }
 
@@ -44,7 +54,7 @@ public class Coupon {
 	}
 
 	public Coupon(String code, String company, Category category, String couponname, String description, Date startDate,
-			Date endDate, int offer, String imagename, String imagetype, byte[] image, String url) {
+			Date endDate, int offer, String imagename, String imagetype, byte[] image, String url,int cost) {
 		super();
 		this.code = code;
 		this.company = company;
@@ -58,6 +68,7 @@ public class Coupon {
 		this.imagetype = imagetype;
 		this.image = image;
 		this.url = url;
+		this.cost=cost;
 	}
 
 	public void setUrl(String url) {

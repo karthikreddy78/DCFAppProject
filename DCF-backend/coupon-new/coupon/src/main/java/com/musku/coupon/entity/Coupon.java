@@ -27,18 +27,26 @@ public class Coupon {
     private Date endDate;
     private int offer;
     private String imagename;
-
+   
     private String imagetype;
 
     private byte[] image;
     private String url;
     //private String code;
 
+    private int cost;
 
 
 
+    public int getCost() {
+		return cost;
+	}
 
-    public String getUrl() {
+	public void setCost(int cost) {
+		this.cost = cost;
+	}
+
+	public String getUrl() {
         return url;
     }
 
@@ -47,7 +55,7 @@ public class Coupon {
 	}
 
 	public Coupon(String code, String company, Category category, String couponname, String description, Date startDate,
-			Date endDate, int offer, String imagename, String imagetype, byte[] image, String url) {
+			Date endDate, int offer, String imagename, String imagetype, byte[] image, String url,int cost) {
 		super();
 		this.code = code;
 		this.company = company;
@@ -61,6 +69,7 @@ public class Coupon {
 		this.imagetype = imagetype;
 		this.image = image;
 		this.url = url;
+		this.cost=cost;
 	}
 
 	public void setUrl(String url) {
