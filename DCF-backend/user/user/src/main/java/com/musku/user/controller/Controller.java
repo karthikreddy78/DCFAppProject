@@ -1,17 +1,26 @@
 package com.musku.user.controller;
 
+import java.util.ArrayList;
+import java.util.List;
+
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.web.bind.annotation.DeleteMapping;
+import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.PathVariable;
+import org.springframework.web.bind.annotation.PutMapping;
+import org.springframework.web.bind.annotation.RequestBody;
+import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.RestController;
+
+import com.musku.user.entity.Category;
 import com.musku.user.entity.Coupon;
 import com.musku.user.entity.User;
 import com.musku.user.proxy.CouponFeignProxy;
 import com.musku.user.service.UserService;
-import io.github.resilience4j.circuitbreaker.annotation.CircuitBreaker;
-import org.slf4j.Logger;
-import org.slf4j.LoggerFactory;
-import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.web.bind.annotation.*;
 
-import java.util.ArrayList;
-import java.util.List;
+import io.github.resilience4j.circuitbreaker.annotation.CircuitBreaker;
 
 @RestController
 @RequestMapping("/users")
@@ -105,6 +114,20 @@ public class Controller {
         List<Coupon> coupons = couponFeintProxy.showCouponsByCompany(id);
         System.out.print(coupons);
         return coupons;
+    }
+    
+    
+   
+    
+    @GetMapping(path = "/coupons/category/{id}")
+    @CircuitBreaker(name = "default",fallbackMethod = "hardcodedresponse")
+    public List<Coupon> showCouponByCategory(@PathVariable Category id)
+    {
+    	logger.info("retry");
+        List<Coupon> coupons = couponFeintProxy.showCouponByCategory(id);
+        System.out.print(coupons);
+        return coupons;
+    	
     }
 
     @GetMapping(path="/coupons/couponslist")

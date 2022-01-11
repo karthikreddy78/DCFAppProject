@@ -86,13 +86,13 @@ class CompanyApplicationTests {
 	}
 
 
-	@Test
-	public void testAddCoupon()
-	{
-		Coupon c=new Coupon("2","amazon","IDFC2021");
-		when(couponFeintProxy.postCoupon(c)).thenReturn(c);
-		assertEquals("IDFC2021",controller.postCouponN(c).getCouponname());
-	}
+//	@Test
+//	public void testAddCoupon()
+//	{
+//		Coupon c=new Coupon("2","amazon","IDFC2021");
+//		when(couponFeintProxy.postCoupon(c)).thenReturn(c);
+//		assertEquals("IDFC2021",controller.postCouponN(c).getCouponname());
+//	}
 
 	@Test
 	public void testdeleteCoupon()

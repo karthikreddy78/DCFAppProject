@@ -5,6 +5,7 @@ import com.musku.user.entity.User;
 import com.musku.user.repository.RoleRepository;
 import com.musku.user.repository.UserRepository;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.security.crypto.password.PasswordEncoder;
 import org.springframework.stereotype.Service;
 
 import java.util.List;
@@ -18,6 +19,9 @@ public class UserService {
 
     @Autowired
     private RoleRepository roleRepository;
+    
+    @Autowired
+    private PasswordEncoder bCryptPasswordEncoder;
 
     public User findUserByEmail(String email) {
         return userRepository.findByEmail(email);
@@ -33,6 +37,12 @@ public class UserService {
         if(u1==null)
         {
             return null;
+        }
+        
+        if(u.getPassword()!=null)
+        {
+        	if(!(u.getPassword().equals(u1.getPassword())))
+        	 u1.setPassword(bCryptPasswordEncoder.encode(u.getPassword()));
         }
         if(u.getFullname()!=null)
             u1.setFullname(u.getFullname());

@@ -1,6 +1,7 @@
 package com.musku.user.proxy;
 
 
+import com.musku.user.entity.Category;
 import com.musku.user.entity.Coupon;
 import org.springframework.cloud.openfeign.FeignClient;
 import org.springframework.web.bind.annotation.GetMapping;
@@ -16,5 +17,8 @@ public interface CouponFeignProxy {
 
     @GetMapping(path="/coupons/company/{id}")
     public List<Coupon> showCouponsByCompany(@PathVariable String id);
+    
+    @GetMapping(path = "/coupons/category/{id}")
+    public List<Coupon> showCouponByCategory(@PathVariable Category id);
 
 }

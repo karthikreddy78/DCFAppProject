@@ -56,7 +56,7 @@ class CouponApplicationTests {
 	public void findCouponsbyName()
 	{
 		String coupon="IDFC2021";
-		when((couponRepository.findByCouponname(coupon)))
+		when((couponRepository.findCouponsByCouponname(coupon)))
 				.thenReturn(new Coupon("2","amazon","IDFC2021"));
 
 		assertEquals(coupon,couponService.findByCouponname(coupon).getCouponname());
@@ -74,13 +74,13 @@ class CouponApplicationTests {
 		assertEquals(2,couponService.findCouponsByCompany(company).size());
 	}
 
-	@Test
-	public void testAddCoupon()
-	{
-		Coupon c=new Coupon("2","amazon","IDFC2021");
-		when(couponRepository.save(c)).thenReturn(c);
-		assertEquals("IDFC2021",couponService.create(c).getCouponname());
-	}
+//	@Test
+//	public void testAddCoupon()
+//	{
+//		Coupon c=new Coupon("2","amazon","IDFC2021");
+//		when(couponRepository.save(c)).thenReturn(c);
+//		assertEquals("IDFC2021",couponService.create(c).getCouponname());
+//	}
 
 	@Test
 	public void testdeleteCoupon()

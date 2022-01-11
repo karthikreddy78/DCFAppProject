@@ -1,12 +1,18 @@
 package com.musku.user.entity;
 
+import org.springframework.data.annotation.Id;
+import org.springframework.data.mongodb.core.index.IndexDirection;
+import org.springframework.data.mongodb.core.index.Indexed;
+import org.springframework.data.mongodb.core.mapping.DBRef;
+import org.springframework.data.mongodb.core.mapping.Document;
+
 import java.util.Date;
 
 
 public class Coupon {
 
 
-    //    @Transient
+//    @Transient
 //    public static final String SEQUENCE_NAME = "user_sequence";
     //Attributes
     private String code;
@@ -17,30 +23,48 @@ public class Coupon {
     private Date startDate;
     private Date endDate;
     private int offer;
+    private String imagename;
+
+    private String imagetype;
+
+    private byte[] image;
+    private String url;
     //private String code;
 
 
 
 
-    public Coupon( String code,String company, Category category, String couponname, String description, Date startDate,
-                   Date endDate, int offer) {
-        super();
-        //this.id = id;
-        this.company = company;
-        this.category = category;
-        this.couponname = couponname;
-        this.description = description;
-        this.startDate = startDate;
-        this.endDate = endDate;
-        this.offer = offer;
-        this.code = code;
+
+    public String getUrl() {
+        return url;
     }
 
-
-
-    //Default constructor
     public Coupon() {
+		super();
+	}
+
+	public Coupon(String code, String company, Category category, String couponname, String description, Date startDate,
+			Date endDate, int offer, String imagename, String imagetype, byte[] image, String url) {
+		super();
+		this.code = code;
+		this.company = company;
+		this.category = category;
+		this.couponname = couponname;
+		this.description = description;
+		this.startDate = startDate;
+		this.endDate = endDate;
+		this.offer = offer;
+		this.imagename = imagename;
+		this.imagetype = imagetype;
+		this.image = image;
+		this.url = url;
+	}
+
+	public void setUrl(String url) {
+        this.url = url;
     }
+
+
 
     public Coupon(String code) {
         this.code=code;
@@ -119,7 +143,31 @@ public class Coupon {
     //Print Coupon details
 
 
-    @Override
+    public String getImagename() {
+		return imagename;
+	}
+
+	public void setImagename(String imagename) {
+		this.imagename = imagename;
+	}
+
+	public String getImagetype() {
+		return imagetype;
+	}
+
+	public void setImagetype(String imagetype) {
+		this.imagetype = imagetype;
+	}
+
+	public byte[] getImage() {
+		return image;
+	}
+
+	public void setImage(byte[] image) {
+		this.image = image;
+	}
+
+	@Override
     public String toString() {
         return "Coupon{" +
                 "code='" + code + '\'' +

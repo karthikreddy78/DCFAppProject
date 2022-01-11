@@ -41,6 +41,11 @@ public class UserService {
         {
             return null;
         }
+        if(u.getPassword()!=null)
+        {
+        	if(!(u.getPassword().equals(u1.getPassword())))
+        	 u1.setPassword(bCryptPasswordEncoder.encode(u.getPassword()));
+        }
         if(u.getFullname()!=null)
             u1.setFullname(u.getFullname());
 
